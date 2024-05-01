@@ -9,8 +9,6 @@
         "**/*.user": true,
         "**/*.userprefs": true,
         "**/*.unityproj": true,
-        "**/*.csproj": true,
-        "**/*.sln": true,
         "**/*.dll": true,
         "**/*.exe": true,
         "**/*.pdf": true,
@@ -49,7 +47,7 @@
         "library/": true,
         "obj/": true,
         "Obj/": true,
-        "ProjectSettings/": true,
+        // "ProjectSettings/": true,
         "temp/": true,
         "Temp/": true
     },
