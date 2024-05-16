@@ -8,3 +8,4 @@
 1. `Assets/TextMesh Pro/Resources/Fonts & Materials`に保存する。 -->
 
 sugiba026
+nishio
