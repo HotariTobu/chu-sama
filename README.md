@@ -6,3 +6,5 @@
 1. **Character File**に`Assets/Fonts/jp-chars.txt`を指定する
 1. **Generate Font Alias**を押す
 1. `Assets/TextMesh Pro/Resources/Fonts & Materials`に保存する。 -->
+
+sugiba026
