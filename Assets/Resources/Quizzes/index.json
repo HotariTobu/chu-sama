@@ -1,0 +1,12 @@
+{
+    "Categories": [
+        {
+            "Key": "cat1",
+            "Label": "カテゴリ1"
+        },
+        {
+            "Key": "cat2",
+            "Label": "カテゴリ2"
+        }
+    ]
+}
