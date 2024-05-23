@@ -1,0 +1,27 @@
+{
+    "$schema": "./category.schema.json",
+    "Problems": [
+        {
+            "DifficultyLevel": 0,
+            "Body": "問題文1",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "正しい選択肢"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "誤った選択肢1"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "誤った選択肢2"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "誤った選択肢3"
+                }
+            ]
+        }
+    ]
+}

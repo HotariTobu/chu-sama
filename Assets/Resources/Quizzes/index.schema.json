@@ -1,0 +1,32 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Quizzes Index",
+    "description": "クイズに関するインデックス情報",
+    "type": "object",
+    "properties": {
+        "Categories": {
+            "description": "カテゴリ一覧",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "Key": {
+                        "description": "カテゴリを識別するためのキー",
+                        "type": "string"
+                    },
+                    "Label": {
+                        "description": "表示されるカテゴリ名",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "Key",
+                    "Label"
+                ]
+            }
+        }
+    },
+    "required": [
+        "Categories"
+    ]
+}
