@@ -15,19 +15,6 @@ public class NewBehaviourScript : MonoBehaviour
     // }
     // class Categories : List<string> { }
 
-    [Serializable]
-    record Category
-    {
-        public string Key = default!;
-        public string Label = default!;
-    }
-
-    [Serializable]
-    record QuizzesIndex
-    {
-        public Category[] Categories = default!;
-    }
-
     // Start is called before the first frame update
     void Start()
     {
