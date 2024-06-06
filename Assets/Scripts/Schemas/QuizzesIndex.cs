@@ -3,5 +3,5 @@ using System;
 [Serializable]
 record QuizzesIndex
 {
-    public Category[] Categories = default!;
+    public CategoryIndex[] Categories = default!;
 }
