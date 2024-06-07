@@ -7,5 +7,5 @@
 1. **Generate Font Alias**を押す
 1. `Assets/TextMesh Pro/Resources/Fonts & Materials`に保存する。 -->
 
-sugiba026
+sugiba0266666
 nishio
