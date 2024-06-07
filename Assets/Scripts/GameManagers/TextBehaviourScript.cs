@@ -7,12 +7,11 @@ using UnityEngine.UI;
 public class TextBehaviourScript : MonoBehaviour
 {
     public GameObject Texts;
-    private TextMeshProUGUI TextsM;
+    public TextMeshProUGUI TextsM;
     private int cnt;
     // Start is called before the first frame update
     void Start()
     {
-        TextsM = Texts.GetComponent<TextMeshProUGUI>();
         cnt = 1;
     }
 
