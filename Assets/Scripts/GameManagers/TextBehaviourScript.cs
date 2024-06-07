@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TextBehaviourScript : MonoBehaviour
 {
-    public Gameobject Texts;
+    public GameObject Texts;
     private TextMeshProUGUI TextsM;
     private int cnt;
     // Start is called before the first frame update
