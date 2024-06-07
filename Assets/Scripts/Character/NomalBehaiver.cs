@@ -38,7 +38,7 @@ public class NomalBehaiver : MonoBehaviour
     }
 
     void DelayMethod1(){
-        GameObject tmp = Resources.Load<GameObject>("MajicBall");
+        GameObject tmp = Resources.Load<GameObject>("Characters/MajicBall");
         GameObject MajicAttack = Instantiate(tmp);
         GameObject Input1 = GameObject.Find("MajicBall(Clone)");
         GameObject Input2 = GameObject.Find("Main Camera");

@@ -37,7 +37,7 @@ public class RockBehaviourScript : MonoBehaviour
     }
 
     void DelayMethod1(){
-        GameObject tmp = Resources.Load<GameObject>("Razer");
+        GameObject tmp = Resources.Load<GameObject>("Characters/Razer");
         GameObject RockAttack = Instantiate(tmp);
         GameObject Input1 = GameObject.Find("Razer(Clone)");
         GameObject Input2 = GameObject.Find("Main Camera");
