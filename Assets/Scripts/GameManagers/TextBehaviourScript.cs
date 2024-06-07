@@ -19,6 +19,7 @@ public class TextBehaviourScript : MonoBehaviour
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.N)){
+            Debug.Log("a");
             TextsM.enabled = true;
         }
 
