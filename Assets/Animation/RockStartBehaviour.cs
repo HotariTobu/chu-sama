@@ -8,7 +8,7 @@ public class RockStartBehaviour : StateMachineBehaviour
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        GameObject tmp_Perticle1 = Resources.Load<GameObject>("Stage");
+        GameObject tmp_Perticle1 = Resources.Load<GameObject>("Characters/Stage");
         GameObject Perticle1 = Instantiate(tmp_Perticle1);
         Input1 = GameObject.Find("Stage(Clone)");
         Input1.name = "Stage1";
