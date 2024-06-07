@@ -1,0 +1,60 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Category",
+    "description": "カテゴリに関する情報",
+    "type": "object",
+    "properties": {
+        "Problems": {
+            "description": "問題一覧",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "DifficultyLevel": {
+                        "description": "問題の難易度",
+                        "type": "integer"
+                    },
+                    "Body": {
+                        "description": "問題の本文",
+                        "type": "string"
+                    },
+                    "Options": {
+                        "description": "問題の選択肢一覧",
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "IsCorrect": {
+                                    "description": "選択肢が正しいかどうか",
+                                    "type": "boolean"
+                                },
+                                "Body": {
+                                    "description": "選択肢の内容",
+                                    "type": "string"
+                                },
+                                "Image": {
+                                    "description": "選択肢に関する画像へのURLかアセットパス",
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "IsCorrect",
+                                "Body"
+                            ]
+                        },
+                        "maxItems": 4,
+                        "minItems": 4
+                    }
+                },
+                "required": [
+                    "DifficultyLevel",
+                    "Body",
+                    "Options"
+                ]
+            }
+        }
+    },
+    "required": [
+        "Problems"
+    ]
+}

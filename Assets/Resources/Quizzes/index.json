@@ -1,0 +1,17 @@
+{
+    "$schema": "./index.schema.json",
+    "Categories": [
+        {
+            "Key": "cat1",
+            "Label": "カテゴリ1"
+        },
+        {
+            "Key": "cat2",
+            "Label": "カテゴリ2"
+        },
+        {
+            "Key": "sample",
+            "Label": "サンプルカテゴリ"
+        }
+    ]
+}
