@@ -18,7 +18,8 @@ public class TextBehaviourScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.N)){
+        GameManager GameManager = GetComponent<GameManager>();
+        if(GameManager.process1 == true){
             TextsM.enabled = true;
         }
 
@@ -34,6 +35,8 @@ public class TextBehaviourScript : MonoBehaviour
     }
 
     void DelayMethod1(){
+        GameManager.process2 = true;
+        TextsM.enabled = false;
         cnt++;
     }
 }
