@@ -12,6 +12,7 @@ public class GameManagerScript : MonoBehaviour
     {
         cnt = 0;
         process1 = false;
+        process2 = false;
     }
 
     void Update()
