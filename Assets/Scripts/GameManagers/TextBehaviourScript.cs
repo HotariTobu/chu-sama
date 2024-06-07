@@ -18,7 +18,7 @@ public class TextBehaviourScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GameManager GameManagerScript = GetComponent<GameManager>();
+        GameManagerScript GameManagerScript = GetComponent<GameManagerScript>();
         if(GameManagerScript.process1 == true){
             TextsM.enabled = true;
         }
