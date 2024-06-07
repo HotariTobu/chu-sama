@@ -14,17 +14,17 @@ public class GameManagerScript : MonoBehaviour
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.I)){
-            GameObject tmp_N = Resources.Load<GameObject>("chu-o-ji_Motion_Magic_All");
+            GameObject tmp_N = Resources.Load<GameObject>("Characters/chu-o-ji_Motion_Magic_All");
             GameObject Nomal = Instantiate(tmp_N);
         }
 
         if(Input.GetKeyDown(KeyCode.P)){
-            GameObject tmp_M = Resources.Load<GameObject>("chu-o-ji_Motion_Muscle_All");
+            GameObject tmp_M = Resources.Load<GameObject>("Characters/chu-o-ji_Motion_Muscle_All");
             GameObject Muscle = Instantiate(tmp_M);
         }
 
         if(Input.GetKeyDown(KeyCode.O)){
-            GameObject tmp_R = Resources.Load<GameObject>("chu-o-ji_Motion_Rock_All");
+            GameObject tmp_R = Resources.Load<GameObject>("Characters/chu-o-ji_Motion_Rock_All");
             GameObject Rock = Instantiate(tmp_R);
         }
 
@@ -33,7 +33,7 @@ public class GameManagerScript : MonoBehaviour
         }
 
         if(cnt > 2){
-            GameObject tmp_Perticle1 = Resources.Load<GameObject>("TinyExplosion");
+            GameObject tmp_Perticle1 = Resources.Load<GameObject>("Characters/TinyExplosion");
             GameObject Perticle1 = Instantiate(tmp_Perticle1);
             cnt = 0;
             Invoke(nameof(DelayMethod1), 1f);
