@@ -19,14 +19,22 @@ public class TextBehaviourScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.B)){
+        if(Input.GetKeyDown(KeyCode.N)){
+            TextsM.enabled = true;
+        }
+
+        if(Input.GetKeyDown(KeyCode.M)){
             if(cnt == 1){
                 TextsM.text = "2nd Stage";
-                cnt++;
+                Invoke(nameof(DelayMethod1), 2f);
             }
             if(cnt == 2){
                 TextsM.text = "3rd Stage";
             }
         }
+    }
+
+    void DelayMethod1(){
+        cnt++;
     }
 }
