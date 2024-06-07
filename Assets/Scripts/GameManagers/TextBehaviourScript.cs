@@ -9,17 +9,18 @@ public class TextBehaviourScript : MonoBehaviour
     public GameObject Texts;
     public TextMeshProUGUI TextsM;
     public int cnt;
+    private GameManagerScript gameManagerScript;
     // Start is called before the first frame update
     void Start()
     {
         cnt = 1;
+        gameManagerScript = GetComponent<GameManagerScript>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        GameManagerScript GameManagerScript = GetComponent<GameManagerScript>();
-        if(GameManagerScript.process1 == true){
+        if(gameManagerScript.process1 == true){
             TextsM.enabled = true;
         }
 
@@ -35,7 +36,7 @@ public class TextBehaviourScript : MonoBehaviour
     }
 
     void DelayMethod1(){
-        GameManagerScript.process2 = true;
+        gameManagerScript.process2 = true;
         TextsM.enabled = false;
         cnt++;
     }
