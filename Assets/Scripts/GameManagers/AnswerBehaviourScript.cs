@@ -24,7 +24,7 @@ public class AnswerBehaviourScript : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.D))
         {
             judge1 = true;
-            GameObject Input1 = Resources.Load<GameObject>("Circle");
+            GameObject Input1 = Resources.Load<GameObject>("Characters/Circle");
 
             if (Input1 != null)
             {
@@ -68,7 +68,7 @@ public class AnswerBehaviourScript : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.A))
         {
-            GameObject Input1 = Resources.Load<GameObject>("Cross");
+            GameObject Input1 = Resources.Load<GameObject>("Characters/Cross");
 
             if (Input1 != null)
             {

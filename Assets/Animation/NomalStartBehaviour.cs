@@ -7,7 +7,7 @@ public class NomalStartBehaviour : StateMachineBehaviour
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        GameObject tmp_Perticle1 = Resources.Load<GameObject>("MajicCircle");
+        GameObject tmp_Perticle1 = Resources.Load<GameObject>("Characters/MajicCircle");
         GameObject Perticle1 = Instantiate(tmp_Perticle1);
     }
 
