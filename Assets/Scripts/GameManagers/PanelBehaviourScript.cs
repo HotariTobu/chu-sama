@@ -195,7 +195,7 @@ public class PanelBehaviourScript : MonoBehaviour
         TimeBehaviourScript TimeBehaviourScript = GetComponent<TimeBehaviourScript>();
 
         if(Allow1.fillAmount == 1f || (TimeBehaviourScript.TimerNum <= 0.01f && TimeBehaviourScript.TimerNum >= -0.01f)){
-            Debug.Log(cnt);
+            // Debug.Log(cnt);
             Allow1.fillAmount = 0f;
             time = 0f;
             judge = false;
