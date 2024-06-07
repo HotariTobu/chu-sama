@@ -8,7 +8,7 @@ public class TextBehaviourScript : MonoBehaviour
 {
     public GameObject Texts;
     public TextMeshProUGUI TextsM;
-    private int cnt;
+    public int cnt;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +19,6 @@ public class TextBehaviourScript : MonoBehaviour
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.N)){
-            Debug.Log("a");
             TextsM.enabled = true;
         }
 
