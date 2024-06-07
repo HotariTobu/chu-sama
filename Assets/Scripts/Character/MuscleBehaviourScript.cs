@@ -36,7 +36,7 @@ public class MuscleBehaviourScript : MonoBehaviour
     }
 
     void DelayMethod1(){
-        GameObject tmp_Perticle1 = Resources.Load<GameObject>("EarthCrack");
+        GameObject tmp_Perticle1 = Resources.Load<GameObject>("Characters/EarthCrack");
         GameObject Perticle1 = Instantiate(tmp_Perticle1);
     }
 
@@ -45,7 +45,7 @@ public class MuscleBehaviourScript : MonoBehaviour
     }
 
     void DelayMethod3(){
-        GameObject tmp_Perticle1 = Resources.Load<GameObject>("ScreenCrack");
+        GameObject tmp_Perticle1 = Resources.Load<GameObject>("Characters/ScreenCrack");
         GameObject Perticle1 = Instantiate(tmp_Perticle1);
         GameObject Input1 = GameObject.Find("Main Camera");
         Vector3 tmp = new Vector3(0f, 0f, 0.5f);
