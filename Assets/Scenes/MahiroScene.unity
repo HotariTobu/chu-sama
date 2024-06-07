@@ -261,7 +261,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 46736058}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -336,7 +336,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 47768837}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
@@ -470,7 +470,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 256139296}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -610,10 +610,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TimerNum: 15
-  TimerText: {fileID: 0}
-  Timer: {fileID: 0}
-  Parent: {fileID: 0}
-  Children: {fileID: 0}
+  TimerText: {fileID: 47768839}
+  Timer: {fileID: 47768837}
+  Parent: {fileID: 1528989189}
+  Children: {fileID: 47768838}
 --- !u!114 &363718911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -626,19 +626,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed4aa39bf8e17bc44a83ce6ada4907ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Panel1: {fileID: 0}
-  Panel2: {fileID: 0}
-  Panel3: {fileID: 0}
-  Panel4: {fileID: 0}
-  Parent: {fileID: 0}
-  Children1: {fileID: 0}
-  Children2: {fileID: 0}
-  Children3: {fileID: 0}
-  Children4: {fileID: 0}
-  Allow1: {fileID: 0}
-  Allow2: {fileID: 0}
-  Allow_T1: {fileID: 0}
-  Allow_T2: {fileID: 0}
+  Panel1: {fileID: 775013765}
+  Panel2: {fileID: 562231581}
+  Panel3: {fileID: 1788205571}
+  Panel4: {fileID: 256139298}
+  Parent: {fileID: 1528989189}
+  Children1: {fileID: 775013764}
+  Children2: {fileID: 562231580}
+  Children3: {fileID: 1788205570}
+  Children4: {fileID: 256139297}
+  Allow1: {fileID: 46736060}
+  Allow2: {fileID: 1083831486}
+  Allow_T1: {fileID: 46736059}
+  Allow_T2: {fileID: 1083831485}
   Pos1: {x: 0, y: 0, z: 0}
   Pos2: {x: 0, y: 0, z: 0}
   Pos3: {x: 0, y: 0, z: 0}
@@ -655,12 +655,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccd28742bc058ad4198cf48c5f7de6ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 0
-  NumOfHearts: 0
-  hearts: []
-  fullHeart: {fileID: 0}
-  emptyHeart: {fileID: 0}
-  panel: {fileID: 0}
+  health: 3
+  NumOfHearts: 3
+  hearts:
+  - {fileID: 1343807288}
+  - {fileID: 1889862014}
+  - {fileID: 1180263055}
+  fullHeart: {fileID: 21300040, guid: 1eaee135ce037439d925cee5e41ce026, type: 3}
+  emptyHeart: {fileID: 21300120, guid: 1eaee135ce037439d925cee5e41ce026, type: 3}
+  panel: {fileID: 340668248}
 --- !u!114 &363718913
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -744,7 +747,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 562231579}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -819,7 +822,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 775013763}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -894,7 +897,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1083831484}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -1391,7 +1394,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1788205569}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
