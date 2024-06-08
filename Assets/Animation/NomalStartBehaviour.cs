@@ -26,7 +26,7 @@ public class NomalStartBehaviour : StateMachineBehaviour
         GameObject Input1 = GameObject.Find("MajicCircle(Clone)");
         Input1.name = "MajicCircle1";
         Destroy(GameObject.Find("MajicCircle1"));
-        textBehaviourScript = GetComponent<textBehaviourScript>();
+        textBehaviourScript = animator.GetComponent<textBehaviourScript>();
         textBehaviourScript.TextsM.enabled = false;
     }
 
