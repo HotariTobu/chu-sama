@@ -21,8 +21,8 @@ public class TextBehaviourScript : MonoBehaviour
     void Update()
     {
         if(gameManagerScript.process1 == true){
-            TextsM.enabled = true;
             if(cnt == 0){
+                TextsM.enabled = true;
                 cnt++;
                 Invoke(nameof(DelayMethod1), 2f);
             }
