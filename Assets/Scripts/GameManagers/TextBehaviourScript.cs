@@ -13,7 +13,7 @@ public class TextBehaviourScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        cnt = 1;
+        cnt = 0;
         gameManagerScript = GetComponent<GameManagerScript>();
     }
 
@@ -22,17 +22,17 @@ public class TextBehaviourScript : MonoBehaviour
     {
         if(gameManagerScript.process1 == true){
             TextsM.enabled = true;
+            if(cnt == 0){
+              Invoke(nameof(DelayMethod1), 2f);
+            }
         }
 
-        if(Input.GetKeyDown(KeyCode.M)){
-            if(cnt == 1){
-                TextsM.text = "2nd Stage";
-                Invoke(nameof(DelayMethod1), 2f);
-            }
-            if(cnt == 2){
-                TextsM.text = "3rd Stage";
-            }
-        }
+        // if(cnt == 1){
+        //     TextsM.text = "2nd Stage";
+        // }
+        // if(cnt == 2){
+        //     TextsM.text = "3rd Stage";
+        // }
     }
 
     void DelayMethod1(){

@@ -24,6 +24,7 @@ public class GameManagerScript : MonoBehaviour
         if(process2 == true){
             GameObject tmp_N = Resources.Load<GameObject>("Characters/chu-o-ji_Motion_Magic_All");
             GameObject Nomal = Instantiate(tmp_N);
+            process2 = false;
         }
 
     //     if(Input.GetKeyDown(KeyCode.P)){
