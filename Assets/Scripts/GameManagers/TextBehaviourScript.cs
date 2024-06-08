@@ -23,7 +23,8 @@ public class TextBehaviourScript : MonoBehaviour
         if(gameManagerScript.process1 == true){
             TextsM.enabled = true;
             if(cnt == 0){
-              Invoke(nameof(DelayMethod1), 2f);
+                cnt++;
+                Invoke(nameof(DelayMethod1), 2f);
             }
         }
 
@@ -38,6 +39,5 @@ public class TextBehaviourScript : MonoBehaviour
     void DelayMethod1(){
         gameManagerScript.process2 = true;
         TextsM.enabled = false;
-        cnt++;
     }
 }
