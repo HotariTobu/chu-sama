@@ -5,7 +5,7 @@ using UnityEngine;
 public class NomalStartBehaviour : StateMachineBehaviour
 {
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
-    private TextBehaviourScript textBehaviourScript;
+    public TextBehaviourScript textBehaviourScript;
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         GameObject tmp_Perticle1 = Resources.Load<GameObject>("Characters/MajicCircle");
