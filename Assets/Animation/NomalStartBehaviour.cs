@@ -5,6 +5,7 @@ using UnityEngine;
 public class NomalStartBehaviour : StateMachineBehaviour
 {
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
+    private TextBehaviourScript textBehaviourScript;
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         GameObject tmp_Perticle1 = Resources.Load<GameObject>("Characters/MajicCircle");
@@ -25,6 +26,8 @@ public class NomalStartBehaviour : StateMachineBehaviour
         GameObject Input1 = GameObject.Find("MajicCircle(Clone)");
         Input1.name = "MajicCircle1";
         Destroy(GameObject.Find("MajicCircle1"));
+        textBehaviourScript = GetComponent<textBehaviourScript>();
+        textBehaviourScript.TextsM.enabled = false;
     }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()

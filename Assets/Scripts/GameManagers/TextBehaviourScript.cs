@@ -38,6 +38,6 @@ public class TextBehaviourScript : MonoBehaviour
 
     void DelayMethod1(){
         gameManagerScript.process2 = true;
-        TextsM.enabled = false;
+        // TextsM.enabled = false;
     }
 }
