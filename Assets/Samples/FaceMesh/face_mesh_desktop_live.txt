@@ -57,6 +57,18 @@ node {
   }
 }
 
+# Flip vertically inputs
+node: {
+  calculator: "ImageTransformationCalculator"
+  input_stream: "IMAGE:throttled_input_video"
+  output_stream: "IMAGE:transformed_input_video"
+  node_options: {
+    [type.googleapis.com/mediapipe.ImageTransformationCalculatorOptions] {
+      flip_vertically: true
+    }
+  }
+}
+
 # Subgraph that detects faces and corresponding landmarks.
 node {
   calculator: "FaceLandmarkFrontCpu"
@@ -79,15 +91,4 @@ node {
   input_stream: "NORM_RECTS:face_rects_from_landmarks"
   input_stream: "DETECTIONS:face_detections"
   output_stream: "IMAGE:output_video"
-}
-
-node: {
-  calculator: "ImageTransformationCalculator"
-  input_stream: "IMAGE:throttled_input_video"
-  output_stream: "IMAGE:transformed_input_video"
-  node_options: {
-    [type.googleapis.com/mediapipe.ImageTransformationCalculatorOptions] {
-      flip_vertically: true
-    }
-  }
 }
