@@ -1,0 +1,709 @@
+{
+    "$schema": "./category.schema.json",
+    "Problems": [
+        {
+            "DifficultyLevel": 0,
+            "Body": "日本の初代内閣総理大臣はだれ？",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "伊藤博文"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "田中角栄"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "小室圭"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "大隈重信"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 0,
+            "Body": "日本にキリスト教を伝えるため来航した人はだれ？",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "ザビエル"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "ペリー"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "ジョニー"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "ジョン"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 0,
+            "Body": "日本が唐へ派遣した使節の名称は何？",
+            "Options": [
+                {
+                    "IsCorrect": false,
+                    "Body": "遣隋使"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "遣唐使"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "渡来人"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "原人"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 0,
+            "Body": "江戸幕府を開いた人物は誰？",
+            "Options": [
+                {
+                    "IsCorrect": false,
+                    "Body": "卑弥呼"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "織田信長"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "豊臣秀吉"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "徳川家康"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 0,
+            "Body": "鎌倉幕府を開いた人はだれ？",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "源頼朝"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "平清盛"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "桓武天皇"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "北条政子"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 0,
+            "Body": "710年から日本の首都になった、奈良の都の名前は何？",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "平城京"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "平安京"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "平和京"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "平成京"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 0,
+            "Body": "土偶が多く出土するのは、何時代の遺跡？",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "縄文時代"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "弥生時代"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "古墳時代"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "江戸時代"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 0,
+            "Body": "1853年、黒船で日本に来て鎖国中の日本を開国させた人はだれ？",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "ペリー"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "ザビエル"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "マッカーサー"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "ルーズベルト"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 0,
+            "Body": "江戸時代はどれくらい続いた？",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "265年"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "２週間"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "165年"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "365年"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 0,
+            "Body": "縄文時代のゴミ捨て場の遺跡の名前は？",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "貝塚"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "骨塚"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "戸塚"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "土塚"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 2,
+            "Body": "銀閣寺を建てた人はだれ？",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "足利義政"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "足利尊氏"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "足利義満"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "ペリー"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 0,
+            "Body": "オランダの医学書を翻訳して、「解体新書」という本を完成させたのはだれ？",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "杉田玄白"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "本居宣長"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "伊藤博文"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "近松門左衛門"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 0,
+            "Body": "問題文1",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "正しい選択肢"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "誤った選択肢1"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "誤った選択肢2"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "誤った選択肢3"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 0,
+            "Body": "大化の改新で活躍した「中大兄皇子」が天皇になった時の名前は何？",
+            "Options": [
+                {
+                    "IsCorrect": false,
+                    "Body": "天武天皇"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "天智天皇"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "聖武天皇"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "後醍醐天皇"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 0,
+            "Body": "「枕草子」を書いた人はだれ？",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "清少納言"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "紫式部"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "小野妹子"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "卑弥呼"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 0,
+            "Body": "日本の沿岸を歩き、初めてほぼ正確な日本地図を作成した人はだれ？",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "伊能忠敬"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "本居宣長"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "松尾芭蕉"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "織田信長"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 0,
+            "Body": "「学問のすゝめ」という本を書き、多くの人々に影響を与えたひとはだれ？",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "福沢諭吉"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "与謝野晶子"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "野口秀雄"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "渋沢栄一ß"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 0,
+            "Body": "「東海道五十三次」などを描いた浮世絵の画家はだれ？",
+            "Options": [
+                {
+                    "IsCorrect": false,
+                    "Body": "葛飾北斎"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "雪舟"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "歌川広重"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "東洲斎写楽"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 0,
+            "Body": "『曽根崎心中』などを手がけた、元禄文化を代表する人形浄瑠璃の脚本家はだれ？",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "近松門左衛門"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "井原西鶴"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "菱川師宣"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "川端康成"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 0,
+            "Body": "1911年に日本が関税自主権を回復した際の外務大臣はだれ？",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "小村寿太郎"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "陸奥宗光"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "大久保利通"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "板垣退助"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 0,
+            "Body": "明治維新で活躍した大久保利通の、出身である藩はどこ？",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "薩摩藩"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "長州藩"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "土佐藩"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "チャーハン"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 0,
+            "Body": "唐から戒律を伝えるために渡日した人物はだれ？",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "鑑真"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "溥儀"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "小野妹子"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "鄧小平"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 2,
+            "Body": "日露戦争で指揮を取り、日本を勝利に導いた人はだれ？",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "東郷平八郎"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "板垣退助"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "坂本龍馬"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "乃木希典"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 0,
+            "Body": "1868年に起こった、旧幕府軍と新政府軍との内戦の名前はなに？",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "戊辰戦争"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "戊申戦争"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "応仁の乱"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "鳥羽伏見の戦い"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 0,
+            "Body": "問題文2",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "正しい選択肢1"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "正しい選択肢2"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "誤った選択肢2"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "誤った選択肢3"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 0,
+            "Body": "問題文2",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "正しい選択肢1"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "正しい選択肢2"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "誤った選択肢2"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "誤った選択肢3"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 0,
+            "Body": "問題文2",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "正しい選択肢1"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "正しい選択肢2"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "誤った選択肢2"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "誤った選択肢3"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 0,
+            "Body": "問題文2",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "正しい選択肢1"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "正しい選択肢2"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "誤った選択肢2"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "誤った選択肢3"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 0,
+            "Body": "問題文2",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "正しい選択肢1"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "正しい選択肢2"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "誤った選択肢2"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "誤った選択肢3"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 0,
+            "Body": "問題文2",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "正しい選択肢1"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "正しい選択肢2"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "誤った選択肢2"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "誤った選択肢3"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 0,
+            "Body": "問題文2",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "正しい選択肢1"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "正しい選択肢2"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "誤った選択肢2"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "誤った選択肢3"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 0,
+            "Body": "問題文2",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "正しい選択肢1"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "正しい選択肢2"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "誤った選択肢2"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "誤った選択肢3"
+                }
+            ]
+        }
+    ]
+}
