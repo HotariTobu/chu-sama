@@ -6,8 +6,15 @@ public class MuscleBehaviourScript : MonoBehaviour
 {
     Animator animator;
     int cnt;
+    private GameObject gameManager;
+    private GameManagerScript gameManagerScript;
+    private HealthBehaviourScript healthBehaviourScript;
+
     void Start()
     {
+        gameManager = GameObject.Find("GameManager");
+        gameManagerScript = gameManager.GetComponent<GameManagerScript>();
+        healthBehaviourScript = gameManager.GetComponent<HealthBehaviourScript>();
         animator = GetComponent<Animator>();
         cnt = 0;
         Invoke(nameof(DelayMethod1), 0.5f);
@@ -16,21 +23,19 @@ public class MuscleBehaviourScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.A)){
-            animator.SetTrigger("Attack Trigger");
-            Invoke(nameof(DelayMethod3), 1f);
+        if(gameManagerScript.process8 == true && gameManagerScript.isCollect == false){
+            gameManagerScript.process8 = false;
+            Invoke(nameof(DelayMethod4), 1.5f);
         }
 
-        if(Input.GetKeyDown(KeyCode.D)){
-            animator.SetTrigger("Damaged Trigger");
+        if(gameManagerScript.process8 == true && gameManagerScript.isCollect == true){
+            gameManagerScript.process8 = false;
+            Invoke(nameof(DelayMethod3), 1.2f);
             cnt++;
         }
 
-        if(Input.GetKeyDown(KeyCode.O) || Input.GetKeyDown(KeyCode.I)){
-            Destroy(this.gameObject);
-        }
-
-        if(cnt > 2){
+        if(gameManagerScript.DestSign == true){
+            gameManagerScript.DestSign = false;
             Invoke(nameof(DelayMethod2), 0.3f);
         }
     }
@@ -45,6 +50,21 @@ public class MuscleBehaviourScript : MonoBehaviour
     }
 
     void DelayMethod3(){
+        animator.SetTrigger("Damaged Trigger");
+        Invoke(nameof(DelayMethod5), 1f);
+    }
+
+    void DelayMethod4(){
+        animator.SetTrigger("Attack Trigger");
+        Invoke(nameof(DelayMethod6), 0.8f);
+
+    }
+
+    void DelayMethod5(){
+        gameManagerScript.process9 = true;
+    }
+
+    void DelayMethod6(){
         GameObject tmp_Perticle1 = Resources.Load<GameObject>("Characters/ScreenCrack");
         GameObject Perticle1 = Instantiate(tmp_Perticle1);
         GameObject Input1 = GameObject.Find("Main Camera");

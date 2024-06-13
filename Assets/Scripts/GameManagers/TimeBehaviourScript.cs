@@ -12,9 +12,12 @@ public class TimeBehaviourScript : MonoBehaviour
     public RectTransform Parent;
     public RectTransform Children;
     private bool movedr = false;
+    public bool judge = false;
+    private GameManagerScript gameManagerScript;
 
     void Start()
     {
+        gameManagerScript = GetComponent<GameManagerScript>();
     }
 
     // Update is called once per frame
@@ -42,12 +45,17 @@ public class TimeBehaviourScript : MonoBehaviour
             movedr = true; 
         }
 
-        if(Input.GetKeyDown(KeyCode.W)){
+        if(gameManagerScript.process5 == true){
+            TimerNum = 16;
+        }
+
+        if(gameManagerScript.process6 == true && judge == false){
+            judge = true;
             TimerNum = 16;
             TimerText.enabled = true;
         }
 
-        if (Input.GetKeyDown(KeyCode.I) || Input.GetKeyDown(KeyCode.O) || Input.GetKeyDown(KeyCode.P) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D))
+        if (gameManagerScript.process7 == true)
         {
             TimerNum = 16;
             TimerText.enabled = false;

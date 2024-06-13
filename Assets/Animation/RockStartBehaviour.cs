@@ -5,6 +5,9 @@ using UnityEngine;
 public class RockStartBehaviour : StateMachineBehaviour
 {
     GameObject Input1;
+    private TextBehaviourScript textBehaviourScript;
+    private GameManagerScript gameManagerScript;
+
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
@@ -18,19 +21,23 @@ public class RockStartBehaviour : StateMachineBehaviour
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
        if(animator.transform.position.y <= 1f){
-            animator.transform.position += new Vector3(0, 0.01f, 0);
+            animator.transform.position += new Vector3(0, 0.004f, 0);
         }
 
         if(Input1.transform.position.y <= 0.5f){
-            Input1.transform.position += new Vector3(0, 0.01f, 0);
+            Input1.transform.position += new Vector3(0, 0.004f, 0);
         }
     }
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
-    //override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-    //{
-    //    
-    //}
+    override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
+    {
+        GameObject obj = GameObject.Find("GameManager");
+        textBehaviourScript = obj.GetComponent<TextBehaviourScript>();
+        textBehaviourScript.TextsM.enabled = false;
+        gameManagerScript = obj.GetComponent<GameManagerScript>();
+        gameManagerScript.process3 = true;
+    }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()
     //override public void OnStateMove(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)

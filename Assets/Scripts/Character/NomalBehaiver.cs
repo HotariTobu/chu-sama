@@ -6,8 +6,15 @@ public class NomalBehaiver : MonoBehaviour
 {
     Animator animator;
     int cnt;
+    private GameObject gameManager;
+    private GameManagerScript gameManagerScript;
+    private HealthBehaviourScript healthBehaviourScript;
+
     void Start()
     {
+        gameManager = GameObject.Find("GameManager");
+        gameManagerScript = gameManager.GetComponent<GameManagerScript>();
+        healthBehaviourScript = gameManager.GetComponent<HealthBehaviourScript>();
         animator = GetComponent<Animator>();
         cnt = 0;
     }
@@ -15,24 +22,20 @@ public class NomalBehaiver : MonoBehaviour
     
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.A)){
-            animator.SetTrigger("Attack Trigger");
-            Invoke(nameof(DelayMethod1), 0.6f);
+        if(gameManagerScript.process8 == true && gameManagerScript.isCollect == false){
+            gameManagerScript.process8 = false;
+            Invoke(nameof(DelayMethod4), 1.5f);
+            Invoke(nameof(DelayMethod1), 2.1f);
         }
 
-        if(Input.GetKeyDown(KeyCode.D)){
-            animator.SetTrigger("Damaged Trigger");
+        if(gameManagerScript.process8 == true && gameManagerScript.isCollect == true){
+            gameManagerScript.process8 = false;
+            Invoke(nameof(DelayMethod3), 1.2f);
             cnt++;
         }
 
-        if(Input.GetKeyDown(KeyCode.O) || Input.GetKeyDown(KeyCode.P)){
-            Destroy(this.gameObject);
-            // GameObject Input1 = GameObject.Find("MajicCircle(Clone)");
-            // Input1.name = "MajicCircle1";
-            // Destroy(GameObject.Find("MajicCircle1"));
-        }
-
-        if(cnt > 2){
+        if(gameManagerScript.DestSign == true){
+            gameManagerScript.DestSign = false;
             Invoke(nameof(DelayMethod2), 0.3f);
         }
     }
@@ -51,5 +54,19 @@ public class NomalBehaiver : MonoBehaviour
 
     void DelayMethod2(){
         Destroy(this.gameObject);
+        healthBehaviourScript.health++;
+    }
+
+    void DelayMethod3(){
+        animator.SetTrigger("Damaged Trigger");
+        Invoke(nameof(DelayMethod5), 1f);
+    }
+
+    void DelayMethod4(){
+        animator.SetTrigger("Attack Trigger");
+    }
+
+    void DelayMethod5(){
+        gameManagerScript.process9 = true;
     }
 }

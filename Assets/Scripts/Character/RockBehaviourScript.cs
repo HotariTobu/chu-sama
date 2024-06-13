@@ -6,8 +6,15 @@ public class RockBehaviourScript : MonoBehaviour
 {
     Animator animator;
     int cnt;
+    private GameObject gameManager;
+    private GameManagerScript gameManagerScript;
+    private HealthBehaviourScript healthBehaviourScript;
+
     void Start()
     {
+        gameManager = GameObject.Find("GameManager");
+        gameManagerScript = gameManager.GetComponent<GameManagerScript>();
+        healthBehaviourScript = gameManager.GetComponent<HealthBehaviourScript>();
         animator = GetComponent<Animator>();
         cnt = 0;
     }
@@ -15,13 +22,15 @@ public class RockBehaviourScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.A)){
-            animator.SetTrigger("Attack Trigger");
-            Invoke(nameof(DelayMethod1), 1.3f);
+        if(gameManagerScript.process8 == true && gameManagerScript.isCollect == false){
+            gameManagerScript.process8 = false;
+            Invoke(nameof(DelayMethod4), 0.7f);
+            Invoke(nameof(DelayMethod1), 2.1f);
         }
 
-        if(Input.GetKeyDown(KeyCode.D)){
-            animator.SetTrigger("Damaged Trigger");
+        if(gameManagerScript.process8 == true && gameManagerScript.isCollect == true){
+            gameManagerScript.process8 = false;
+            Invoke(nameof(DelayMethod3), 1.2f);
             cnt++;
         }
 
@@ -31,7 +40,8 @@ public class RockBehaviourScript : MonoBehaviour
             Destroy(Input1);
         }
 
-        if(cnt > 2){
+        if(gameManagerScript.DestSign == true){
+            gameManagerScript.DestSign = false;
             Invoke(nameof(DelayMethod2), 0.3f);
         }
     }
@@ -50,7 +60,21 @@ public class RockBehaviourScript : MonoBehaviour
 
     void DelayMethod2(){
         Destroy(this.gameObject);
+        healthBehaviourScript.health++;
         GameObject Input1 = GameObject.Find("Stage1");
         Destroy(Input1);
+    }
+
+    void DelayMethod3(){
+        animator.SetTrigger("Damaged Trigger");
+        Invoke(nameof(DelayMethod5), 1f);
+    }
+
+    void DelayMethod4(){
+        animator.SetTrigger("Attack Trigger");
+    }
+
+    void DelayMethod5(){
+        gameManagerScript.process9 = true;
     }
 }

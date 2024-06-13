@@ -11,33 +11,24 @@ public class HealthBehaviourScript : MonoBehaviour
     public Sprite fullHeart;
     public Sprite emptyHeart;
     public Image panel;
+    private GameManagerScript gameManagerScript;
+    private TextBehaviourScript textBehaviourScript;
+
     void Start()
     {
-        
+        gameManagerScript = GetComponent<GameManagerScript>();
+        textBehaviourScript = GetComponent<TextBehaviourScript>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.A)){
+        if(gameManagerScript.process8 == true && gameManagerScript.isCollect == false){
             if(health > 0){
-                Invoke(nameof(DelayMethod1), 1f);
-                Invoke(nameof(DelayMethod2), 1.7f);
+                Invoke(nameof(DelayMethod1), 2.4f);
+                Invoke(nameof(DelayMethod2), 3f);
             }
         }
-
-        if(Input.GetKeyDown(KeyCode.I)){
-            health++;
-        }
-
-        if(Input.GetKeyDown(KeyCode.P)){
-            health++;
-        }
-
-        if(Input.GetKeyDown(KeyCode.O)){
-            health++;
-        }
-
 
         if(health > NumOfHearts){
             health = NumOfHearts;
@@ -64,6 +55,21 @@ public class HealthBehaviourScript : MonoBehaviour
     }
 
     void DelayMethod2(){
-        panel.enabled = false;
+        if(health > 0){
+            panel.enabled = false;
+        }
+        Invoke(nameof(DelayMethod3), 1f);
+        Invoke(nameof(DelayMethod4), 3f);
+        // gameManagerScript.process9 = true;
+    }
+
+    void DelayMethod3(){
+        gameManagerScript.process910 = true;
+    }
+
+    void DelayMethod4(){
+        gameManagerScript.process910 = false;
+        textBehaviourScript.TextsM.enabled = false;
+        gameManagerScript.process9 = true;
     }
 }

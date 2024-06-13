@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class MuscleBehavior : StateMachineBehaviour
 {
+    private TextBehaviourScript textBehaviourScript;
+    private GameManagerScript gameManagerScript;
+
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     // override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     // {
@@ -21,6 +24,12 @@ public class MuscleBehavior : StateMachineBehaviour
        GameObject Input1 = GameObject.Find("EarthCrack(Clone)");
         Input1.name = "EarthCrack1";
         Destroy(GameObject.Find("EarthCrack1"));
+
+        GameObject obj = GameObject.Find("GameManager");
+        textBehaviourScript = obj.GetComponent<TextBehaviourScript>();
+        textBehaviourScript.TextsM.enabled = false;
+        gameManagerScript = obj.GetComponent<GameManagerScript>();
+        gameManagerScript.process3 = true;
     }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()

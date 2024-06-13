@@ -10,10 +10,14 @@ public class AnswerBehaviourScript : MonoBehaviour
     private GameObject circle;
     private Vector3 first2;
     private GameObject cross;
+    private GameManagerScript gameManagerScript;
+    private PanelBehaviourScript panelBehaviourScript;
 
     // Start is called before the first frame update
     void Start()
     {
+        gameManagerScript = GetComponent<GameManagerScript>();
+        panelBehaviourScript = GetComponent<PanelBehaviourScript>();
         judge1 = false;
         judge2 = false;
     }
@@ -21,21 +25,44 @@ public class AnswerBehaviourScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            judge1 = true;
-            GameObject Input1 = Resources.Load<GameObject>("Characters/Circle");
+        if(gameManagerScript.process7 == true && panelBehaviourScript.rep != 0){
+            if(panelBehaviourScript.rep == gameManagerScript.ans){
+                panelBehaviourScript.rep = 0;
+                judge1 = true;
+                GameObject Input1 = Resources.Load<GameObject>("Characters/Circle");
 
-            if (Input1 != null)
-            {
-                GameObject Tmp = Instantiate(Input1);
-                Tmp.name = "circle";
-                circle = Tmp;
-
-                if (circle != null)
+                if (Input1 != null)
                 {
-                    first1 = circle.transform.position;
+                    GameObject Tmp = Instantiate(Input1);
+                    Tmp.name = "circle";
+                    circle = Tmp;
+
+                    if (circle != null)
+                    {
+                        first1 = circle.transform.position;
+                    }
                 }
+                gameManagerScript.isCollect = true;
+                gameManagerScript.CollectCnt++;
+                gameManagerScript.n++;
+            }else{
+                panelBehaviourScript.rep = 0;
+                judge1 = true;
+                GameObject Input1 = Resources.Load<GameObject>("Characters/Cross");
+
+                if (Input1 != null)
+                {
+                    GameObject Tmp = Instantiate(Input1);
+                    Tmp.name = "cross";
+                    cross = Tmp;
+
+                    if (cross != null)
+                    {
+                        first2 = cross.transform.position;
+                    }
+                }
+                gameManagerScript.isCollect = false;
+                gameManagerScript.n++;
             }
         }
 
@@ -66,22 +93,22 @@ public class AnswerBehaviourScript : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            GameObject Input1 = Resources.Load<GameObject>("Characters/Cross");
+        // if (Input.GetKeyDown(KeyCode.A))
+        // {
+        //     GameObject Input1 = Resources.Load<GameObject>("Characters/Cross");
 
-            if (Input1 != null)
-            {
-                GameObject Tmp = Instantiate(Input1);
-                Tmp.name = "cross";
-                cross = Tmp;
+        //     if (Input1 != null)
+        //     {
+        //         GameObject Tmp = Instantiate(Input1);
+        //         Tmp.name = "cross";
+        //         cross = Tmp;
 
-                if (cross != null)
-                {
-                    first2 = cross.transform.position;
-                }
-            }
-        }
+        //         if (cross != null)
+        //         {
+        //             first2 = cross.transform.position;
+        //         }
+        //     }
+        // }
 
         if (cross != null)
         {
