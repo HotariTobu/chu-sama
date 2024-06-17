@@ -18,7 +18,7 @@ public class NomalStartBehaviour : StateMachineBehaviour
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         if(animator.transform.position.y <= 0f){
-            animator.transform.position += new Vector3(0, 0.0035f, 0);
+            animator.transform.position += new Vector3(0, 0.007f, 0);
         }
     }
 

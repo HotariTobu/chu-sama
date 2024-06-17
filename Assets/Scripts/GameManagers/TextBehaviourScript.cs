@@ -19,6 +19,7 @@ public class TextBehaviourScript : MonoBehaviour
     private TextMeshProUGUI qt4;
     private float objScale;
     private GameManagerScript gameManagerScript;
+    public int SkyNum;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +30,7 @@ public class TextBehaviourScript : MonoBehaviour
         qt3 = q3.GetComponent<TextMeshProUGUI>();
         qt4 = q4.GetComponent<TextMeshProUGUI>();
         objScale = 1.0f;
+        SkyNum = 1;
     }
 
     // Update is called once per frame
@@ -36,6 +38,7 @@ public class TextBehaviourScript : MonoBehaviour
     {
         if(gameManagerScript.process1 == true){
             if(cnt == 0){
+                gameManagerScript.bgmprocess1 = true;
                 TextsM.enabled = true;
                 cnt++;
                 Invoke(nameof(DelayMethod1), 2f);
@@ -45,9 +48,11 @@ public class TextBehaviourScript : MonoBehaviour
 
         if(gameManagerScript.process1 == true){
             if(cnt == 1){
+                gameManagerScript.bgmprocess2 = true;
                 TextsM.text = "2nd Stage";
                 TextsM.enabled = true;
                 cnt++;
+                SkyNum++;
                 Invoke(nameof(DelayMethod1), 2f);
                 gameManagerScript.process1 = false;
             }
@@ -55,9 +60,11 @@ public class TextBehaviourScript : MonoBehaviour
 
         if(gameManagerScript.process1 == true){
             if(cnt == 2){
+                gameManagerScript.bgmprocess3 = true;
                 TextsM.text = "3rd Stage";
                 TextsM.enabled = true;
                 cnt++;
+                SkyNum++;
                 Invoke(nameof(DelayMethod1), 2f);
                 gameManagerScript.process1 = false;
             }
@@ -112,6 +119,7 @@ public class TextBehaviourScript : MonoBehaviour
     }
 
     void DelayMethod2(){
+        gameManagerScript.SEprocess2 = true;
         TextsM.text = "Q" + gameManagerScript.n.ToString();
         TextsM.enabled = true;
     }

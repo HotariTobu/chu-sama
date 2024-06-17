@@ -27,11 +27,6 @@ public class TimeBehaviourScript : MonoBehaviour
         Vector3 parentPos = Parent.position;
         float distance = parentPos.x - childPos.x;
 
-        if(Input.GetKeyDown(KeyCode.G)){
-            childPos.z += 18f;
-            Children.position = childPos;
-        }
-
         if (TimerNum > 0)
         {
             TimerNum -= Time.deltaTime;
@@ -53,6 +48,7 @@ public class TimeBehaviourScript : MonoBehaviour
             judge = true;
             TimerNum = 16;
             TimerText.enabled = true;
+            gameManagerScript.timebgmprocess1 = true;
         }
 
         if (gameManagerScript.process7 == true)

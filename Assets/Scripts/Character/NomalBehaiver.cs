@@ -59,14 +59,20 @@ public class NomalBehaiver : MonoBehaviour
 
     void DelayMethod3(){
         animator.SetTrigger("Damaged Trigger");
+        gameManagerScript.SEprocess6 = true;
         Invoke(nameof(DelayMethod5), 1f);
     }
 
     void DelayMethod4(){
         animator.SetTrigger("Attack Trigger");
+        Invoke(nameof(DelayMethod6), 0.3f);
     }
 
     void DelayMethod5(){
         gameManagerScript.process9 = true;
+    }
+
+    void DelayMethod6(){
+        gameManagerScript.SEprocess5 = true;
     }
 }

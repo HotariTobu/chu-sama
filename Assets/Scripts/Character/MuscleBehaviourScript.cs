@@ -51,13 +51,13 @@ public class MuscleBehaviourScript : MonoBehaviour
 
     void DelayMethod3(){
         animator.SetTrigger("Damaged Trigger");
+        gameManagerScript.SEprocess6 = true;
         Invoke(nameof(DelayMethod5), 1f);
     }
 
     void DelayMethod4(){
         animator.SetTrigger("Attack Trigger");
         Invoke(nameof(DelayMethod6), 0.8f);
-
     }
 
     void DelayMethod5(){
@@ -65,6 +65,7 @@ public class MuscleBehaviourScript : MonoBehaviour
     }
 
     void DelayMethod6(){
+        gameManagerScript.SEprocess13 = true;
         GameObject tmp_Perticle1 = Resources.Load<GameObject>("Characters/ScreenCrack");
         GameObject Perticle1 = Instantiate(tmp_Perticle1);
         GameObject Input1 = GameObject.Find("Main Camera");

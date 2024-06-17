@@ -21,11 +21,11 @@ public class RockStartBehaviour : StateMachineBehaviour
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
        if(animator.transform.position.y <= 1f){
-            animator.transform.position += new Vector3(0, 0.004f, 0);
+            animator.transform.position += new Vector3(0, 0.007f, 0);
         }
 
         if(Input1.transform.position.y <= 0.5f){
-            Input1.transform.position += new Vector3(0, 0.004f, 0);
+            Input1.transform.position += new Vector3(0, 0.007f, 0);
         }
     }
 

@@ -8,6 +8,8 @@ public class SkyBehaviourScript : MonoBehaviour
     private GameObject gameManager;
     private GameManagerScript gameManagerScript;
     private TextBehaviourScript textBehaviourScript;
+    private bool skyjudge1;
+    private bool skyjudge2;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,16 +22,14 @@ public class SkyBehaviourScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(gameManagerScript.process1 == true){
-            if(textBehaviourScript.cnt == 1){
-                RenderSettings.skybox = sky[1];
-            }
+        if(textBehaviourScript.SkyNum == 2 && skyjudge1 == false){
+            RenderSettings.skybox = sky[1];
+            skyjudge1 = true;
         }
 
-        if(gameManagerScript.process1 == true){
-            if(textBehaviourScript.cnt == 2){
-                RenderSettings.skybox = sky[2];
-            }
+        if(textBehaviourScript.SkyNum == 3 && skyjudge2 == false){
+            RenderSettings.skybox = sky[2];
+            skyjudge2 = true;
         }
     }
 }

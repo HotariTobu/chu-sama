@@ -120,7 +120,7 @@ public class PanelBehaviourScript : MonoBehaviour
         }
 
         if(gameManagerScript.process6 == true){
-            if(Input.GetKeyDown(KeyCode.Z)){
+            if(Input.GetKeyDown(KeyCode.Z) && cnt != 1){
                 Allow1.enabled = true;
                 Allow2.enabled = true;
                 Allow_T1.rotation = Quaternion.Euler(0, 0, 180);
@@ -139,7 +139,7 @@ public class PanelBehaviourScript : MonoBehaviour
                 cnt = 1;
             }
 
-            if(Input.GetKeyDown(KeyCode.X)){
+            if(Input.GetKeyDown(KeyCode.X) && cnt != 2){
                 Allow1.enabled = true;
                 Allow2.enabled = true;
                 Allow_T1.rotation = Quaternion.Euler(0, 0, 180);
@@ -158,7 +158,7 @@ public class PanelBehaviourScript : MonoBehaviour
                 cnt = 2;
             }
 
-            if(Input.GetKeyDown(KeyCode.C)){
+            if(Input.GetKeyDown(KeyCode.C) && cnt != 3){
                 Allow1.enabled = true;
                 Allow2.enabled = true;
                 Allow_T1.rotation = Quaternion.Euler(0, 0, 0);
@@ -177,7 +177,7 @@ public class PanelBehaviourScript : MonoBehaviour
                 cnt = 3;
             }
 
-            if(Input.GetKeyDown(KeyCode.V)){
+            if(Input.GetKeyDown(KeyCode.V) && cnt != 4){
                 Allow1.enabled = true;
                 Allow2.enabled = true;
                 Allow_T1.rotation = Quaternion.Euler(0, 0, 0);
@@ -207,8 +207,6 @@ public class PanelBehaviourScript : MonoBehaviour
         if(gameManagerScript.process6 == true){
             if(Allow1.fillAmount == 1f || (TimeBehaviourScript.TimerNum <= 0.01f && TimeBehaviourScript.TimerNum >= -0.01f)){
                 if(judge3 == false){
-                    // Debug.Log(cnt);
-                    // Debug.Log(rep);
                     rep = cnt;
                     Allow1.fillAmount = 0f;
                     time = 0f;
@@ -217,6 +215,7 @@ public class PanelBehaviourScript : MonoBehaviour
                     Allow2.enabled = false;
                     gameManagerScript.process6 = false;
                     judge3 = true;
+                    cnt = 0;
                 }
             }
         }

@@ -16,6 +16,28 @@ public class GameManagerScript : MonoBehaviour
     public bool process9;
     public bool process910;
     public bool process10;
+    public bool bgmprocess1;
+    public bool bgmprocess2;
+    public bool bgmprocess3;
+    public bool Stopbgmprocess1;
+    public bool Stopbgmprocess2;
+    public bool Stopbgmprocess3;
+    public bool timebgmprocess1;
+    public bool SEprocess1;
+    public bool SEprocess2;
+    public bool SEprocess3;
+    public bool SEprocess4;
+    public bool SEprocess5;
+    public bool SEprocess6;
+    public bool SEprocess7;
+    public bool SEprocess8;
+    public bool SEprocess9;
+    public bool SEprocess10;
+    public bool SEprocess11;
+    public bool SEprocess12;
+    public bool SEprocess13;
+    public bool SEprocess14;
+    public bool SEprocess15;
     public bool SucceedJudge;
     public int ans = 1;
     public bool isCollect;
@@ -33,21 +55,9 @@ public class GameManagerScript : MonoBehaviour
         timeBehaviourScript = GetComponent<TimeBehaviourScript>();
         healthBehaviourScript = GetComponent<HealthBehaviourScript>();
         cnt = 0;
-        process1 = false;
-        process2 = false;
-        process3 = false;
-        process4 = false;
-        process5 = false;
-        process6 = false;
-        process7 = false;
-        process8 = false;
-        process9 = false;
-        process910 = false;
-        process10 = false;
         n = 1;
         CollectCnt = 0;
         CharaCnt = 1;
-        DestSign = false;
     }
 
     void Update()
@@ -60,17 +70,19 @@ public class GameManagerScript : MonoBehaviour
             GameObject tmp_N = Resources.Load<GameObject>("Characters/chu-o-ji_Motion_Magic_All");
             GameObject Nomal = Instantiate(tmp_N);
             process2 = false;
+            SEprocess1 = true;
         }
 
         if(process2 == true && CharaCnt == 2){
             GameObject tmp_R = Resources.Load<GameObject>("Characters/chu-o-ji_Motion_Rock_All");
             GameObject Rock = Instantiate(tmp_R);
             process2 = false;
+            SEprocess7 = true;
         }
 
         if(process2 == true && CharaCnt == 3){
-            GameObject tmp_M = Resources.Load<GameObject>("Characters/chu-o-ji_Motion_Muscle_All");
-            GameObject Muscle = Instantiate(tmp_M);
+            SEprocess14 = true;
+            Invoke(nameof(DelayMethod5), 3f);
             process2 = false;
         }
 
@@ -97,6 +109,7 @@ public class GameManagerScript : MonoBehaviour
             GameObject tmp_Perticle1 = Resources.Load<GameObject>("Characters/TinyExplosion");
             GameObject Perticle1 = Instantiate(tmp_Perticle1);
             Invoke(nameof(DelayMethod2), 1f);
+            SEprocess11 = true;
             process9 = false;
             if(CharaCnt < 4){
                 Invoke(nameof(DelayMethod3), 2.5f);
@@ -121,9 +134,22 @@ public class GameManagerScript : MonoBehaviour
         GameObject Input1 = GameObject.Find("TinyExplosion(Clone)");
         Input1.name = "TinyExplosion1";
         Destroy(GameObject.Find("TinyExplosion1"));
+        if(CharaCnt == 2) Stopbgmprocess1 = true;
+        if(CharaCnt == 3) Stopbgmprocess2 = true;
+        if(CharaCnt == 4) Stopbgmprocess3 = true;
     }
 
     void DelayMethod3(){
         process1 = true;
+    }
+
+    void DelayMethod4(){
+        SEprocess12 = true;
+    }
+
+    void DelayMethod5(){
+        GameObject tmp_M = Resources.Load<GameObject>("Characters/chu-o-ji_Motion_Muscle_All");
+        GameObject Muscle = Instantiate(tmp_M);
+        Invoke(nameof(DelayMethod4), 0.4f);
     }
 }

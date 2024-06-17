@@ -27,6 +27,7 @@ public class AnswerBehaviourScript : MonoBehaviour
     {
         if(gameManagerScript.process7 == true && panelBehaviourScript.rep != 0){
             if(panelBehaviourScript.rep == gameManagerScript.ans){
+                gameManagerScript.SEprocess3 = true;
                 panelBehaviourScript.rep = 0;
                 judge1 = true;
                 GameObject Input1 = Resources.Load<GameObject>("Characters/Circle");
@@ -46,6 +47,7 @@ public class AnswerBehaviourScript : MonoBehaviour
                 gameManagerScript.CollectCnt++;
                 gameManagerScript.n++;
             }else{
+                gameManagerScript.SEprocess4 = true;
                 panelBehaviourScript.rep = 0;
                 judge1 = true;
                 GameObject Input1 = Resources.Load<GameObject>("Characters/Cross");
