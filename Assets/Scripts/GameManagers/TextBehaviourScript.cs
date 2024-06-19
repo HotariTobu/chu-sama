@@ -108,7 +108,7 @@ public class TextBehaviourScript : MonoBehaviour
                 TextsM.text = "Clear!";
                 TextsM.enabled = true;
             }else{
-                TextsM.text = "You Died";
+                TextsM.text = "GAME OVER";
                 TextsM.enabled = true;
             }
         }

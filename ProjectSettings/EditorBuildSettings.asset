@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/StartScene.unity
+    guid: 67a011d112201674f8a877db6b844cd4
+  - enabled: 1
+    path: Assets/Scenes/MahiroScene.unity
+    guid: 86825221362d1d146911a0e824b4a8ae
   m_configObjects: {}

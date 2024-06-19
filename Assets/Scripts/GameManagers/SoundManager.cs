@@ -87,7 +87,8 @@ public class BGMSoundData
     {
         NomalBGM,
         RockBGM,
-        MuscleBGM, // これがラベルになる
+        MuscleBGM,
+        ClearBGM, // これがラベルになる
     }
 
     public BGM bgm;
@@ -129,7 +130,8 @@ public class SESoundData1
         Damage,
         correct,
         cross,
-        explosion, // これがラベルになる
+        explosion,
+        clear, // これがラベルになる
     }
 
     public SE1 se1;
