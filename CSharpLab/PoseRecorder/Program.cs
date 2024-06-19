@@ -22,6 +22,9 @@ var path = $"{DateTime.Now:yyyy-MM-dd_HH-mm-ss}.dat";
 using var stream = File.OpenWrite(path);
 using var writer = new StreamWriter(stream);
 
+await Task.Delay(2000);
+Console.WriteLine(string.Join(' ', Enumerable.Repeat("START!", 100)));
+
 var frameCount = 0;
 
 while (frameCount < MAX_FRAME_COUNT)
@@ -51,3 +54,5 @@ while (frameCount < MAX_FRAME_COUNT)
 
 tracker.Shutdown();
 device.StopCameras();
+
+Console.WriteLine($"Written in: {Path.GetFullPath(path)}");
