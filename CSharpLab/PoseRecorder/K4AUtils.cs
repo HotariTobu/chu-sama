@@ -5,7 +5,7 @@ public static class K4AUtils
 {
     public static IEnumerable<Vector3> GetJointNormalizedVectors(Skeleton bodySkelton)
     {
-        var jointPositions = from jointIndex in Enumerable.Range(0, (int)JointId.Count)
+        var jointPositions = from jointIndex in Enumerable.Range(0, (int)JointId.Count - 1)
                              let joint = bodySkelton.GetJoint(jointIndex)
                              select joint.Position;
 
