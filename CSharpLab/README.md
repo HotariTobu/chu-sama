@@ -1,6 +1,6 @@
 HOW TO USE .NET on .ipynb
 
 ```
-dotnet restore
+dotnet tool restore
 dotnet interactive jupyter install
 ```
