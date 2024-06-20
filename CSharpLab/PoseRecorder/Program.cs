@@ -23,7 +23,6 @@ using var stream = File.OpenWrite(path);
 using var writer = new StreamWriter(stream);
 
 await Task.Delay(2000);
-Console.WriteLine(string.Join(' ', Enumerable.Repeat("START!", 100)));
 
 var frameCount = 0;
 
@@ -48,6 +47,8 @@ while (frameCount < MAX_FRAME_COUNT)
     writer.WriteLine(line);
 
     frameCount++;
+
+    Console.WriteLine(frameCount);
 }
 
 tracker.Shutdown();
