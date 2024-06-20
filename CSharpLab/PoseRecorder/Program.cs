@@ -34,8 +34,6 @@ while (frameCount < MAX_FRAME_COUNT)
         tracker.EnqueueCapture(capture);
     }
 
-    await Task.Delay(50);
-
     using var bodyFrame = tracker.PopResult();
     if (bodyFrame.NumberOfBodies == 0)
     {
