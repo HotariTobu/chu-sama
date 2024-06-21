@@ -6,8 +6,12 @@
             "Label": "カテゴリ1"
         },
         {
-            "Key": "cat2",
-            "Label": "カテゴリ2"
+            "Key": "history",
+            "Label": "日本史"
+        },
+        {
+            "Key": "kanji",
+            "Label": "漢字"
         },
         {
             "Key": "sample",
