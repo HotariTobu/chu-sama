@@ -52,5 +52,6 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "chu-sama.sln"
+    "dotnet.defaultSolution": "chu-sama.sln",
+    "dotnet.preferCSharpExtension": true
 }
