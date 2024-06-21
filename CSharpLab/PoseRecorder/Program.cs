@@ -15,8 +15,8 @@ device.StartCameras(deviceConfig);
 
 var calibration = device.GetCalibration(deviceConfig.DepthMode, deviceConfig.ColorResolution);
 
-var tackerConfig = TrackerConfiguration.Default;
-using var tracker = Tracker.Create(calibration, tackerConfig);
+var trackerConfig = TrackerConfiguration.Default;
+using var tracker = Tracker.Create(calibration, trackerConfig);
 
 var path = $"{DateTime.Now:yyyy-MM-dd_HH-mm-ss}.dat";
 using var stream = File.OpenWrite(path);

@@ -56,8 +56,8 @@ public partial class MainWindow : Window
         };
 
         var calibration = _device.GetCalibration(_deviceConfig.DepthMode, _deviceConfig.ColorResolution);
-        var tackerConfig = TrackerConfiguration.Default;
-        _tracker = Tracker.Create(calibration, tackerConfig);
+        var trackerConfig = TrackerConfiguration.Default;
+        _tracker = Tracker.Create(calibration, trackerConfig);
 
         _timer = new();
         _timer.Tick += new System.EventHandler(_timerTick);
