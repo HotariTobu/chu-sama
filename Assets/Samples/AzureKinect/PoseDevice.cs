@@ -8,6 +8,8 @@ using System;
 
 public class PoseDevice : IDisposable
 {
+    private static string s_modelFileName = "dnn_model_2_0_op11.onnx";
+
     private Device _device;
     private DeviceConfiguration _deviceConfig;
     private Tracker _tracker;
@@ -22,6 +24,12 @@ public class PoseDevice : IDisposable
 
     public PoseDevice()
     {
+        var modelPath = $"{UnityEngine.Application.streamingAssetsPath}/{s_modelFileName}";
+        if (!File.Exists(modelPath))
+        {
+            throw new FileNotFoundException($"A pose model file of TFlite must be located in the working dir and the filename must be `{modelPath}`.");
+        }
+
         _device = Device.Open();
         _deviceConfig = new DeviceConfiguration
         {
@@ -30,7 +38,7 @@ public class PoseDevice : IDisposable
 
         var calibration = _device.GetCalibration(_deviceConfig.DepthMode, _deviceConfig.ColorResolution);
         var trackerConfig = TrackerConfiguration.Default;
-        trackerConfig.ModelPath = $"{Application.streamingAssetsPath}/dnn_model_2_0_op11.onnx";
+        trackerConfig.ModelPath = modelPath;
         _tracker = Tracker.Create(calibration, trackerConfig);
 
         _classifier = new();
