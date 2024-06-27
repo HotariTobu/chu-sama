@@ -2,8 +2,8 @@
     "$schema": "./index.schema.json",
     "Categories": [
         {
-            "Key": "cat1",
-            "Label": "カテゴリ1"
+            "Key": "history",
+            "Label": "歴史"
         },
         {
             "Key": "history",

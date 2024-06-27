@@ -10,6 +10,9 @@ public class MuscleBehavior : StateMachineBehaviour
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     // override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     // {
+    //     GameObject gameManagerObject = GameObject.Find("GameManager");
+    //     gameManagerScript = gameManagerObject.GetComponent<GameManagerScript>();
+    //     gameManagerScript.splineAnimate.enabled = false;
     // }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
@@ -30,6 +33,8 @@ public class MuscleBehavior : StateMachineBehaviour
         textBehaviourScript.TextsM.enabled = false;
         gameManagerScript = obj.GetComponent<GameManagerScript>();
         gameManagerScript.process3 = true;
+
+        gameManagerScript.splineAnimate.enabled = true;
     }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()

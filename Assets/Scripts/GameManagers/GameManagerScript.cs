@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Splines;
 
 public class GameManagerScript : MonoBehaviour
 {
@@ -38,16 +39,34 @@ public class GameManagerScript : MonoBehaviour
     public bool SEprocess13;
     public bool SEprocess14;
     public bool SEprocess15;
+    public bool probprocess;
     public bool SucceedJudge;
-    public int ans = 1;
+    public int ans;
     public bool isCollect;
     public int n;
     public int CollectCnt;
     public int CharaCnt;
     public bool DestSign;
+    public string prob;
+    public string ansprob;
+    public GameObject target;
+    public GameObject target2;
+    public GameObject target3;
+    public GameObject target4;
+    public GameObject target5;
+    public GameObject camera;
     private PanelBehaviourScript panelBehaviourScript;
     private TimeBehaviourScript timeBehaviourScript;
     private HealthBehaviourScript healthBehaviourScript;
+    public SplineAnimate splineAnimate;
+    private float angle = 90f;
+    private Vector3 axis = Vector3.up;
+    private float interpolant = 0.05f;
+    private Quaternion targetRot;
+    private bool judge4;
+    private int cnt2;
+    private bool firstRotationComplete = false;
+    public bool Attackjudge;
 
     void Start()
     {
@@ -58,6 +77,8 @@ public class GameManagerScript : MonoBehaviour
         n = 1;
         CollectCnt = 0;
         CharaCnt = 1;
+
+        Debug.Log(TitleBehaviourScript.cnt);
     }
 
     void Update()
@@ -82,8 +103,30 @@ public class GameManagerScript : MonoBehaviour
 
         if(process2 == true && CharaCnt == 3){
             SEprocess14 = true;
-            Invoke(nameof(DelayMethod5), 3f);
+            splineAnimate.enabled = false;
+            Invoke(nameof(DelayMethod5), 3.5f);
             process2 = false;
+            judge4 = true;
+
+            targetRot = Quaternion.AngleAxis(angle, axis) * camera.transform.rotation;
+        }
+
+        if(judge4){
+            camera.transform.rotation = Quaternion.Lerp(camera.transform.rotation, targetRot, interpolant);
+            if(Quaternion.Angle(camera.transform.rotation, targetRot) < 0.01f && cnt2 == 0){
+                cnt2++;
+                angle = 179f;
+                axis = Vector3.down;
+                targetRot = Quaternion.AngleAxis(angle, axis) * camera.transform.rotation;
+            }
+
+            if(Quaternion.Angle(camera.transform.rotation, targetRot) < 0.01f && cnt2 == 1){
+                cnt2++;
+                angle = 90f;
+                axis = Vector3.down;
+                interpolant = 0.2f;
+                targetRot = Quaternion.AngleAxis(angle, axis) * camera.transform.rotation;
+            }
         }
 
         if(healthBehaviourScript.health > 0){
@@ -108,6 +151,13 @@ public class GameManagerScript : MonoBehaviour
             CharaCnt++;
             GameObject tmp_Perticle1 = Resources.Load<GameObject>("Characters/TinyExplosion");
             GameObject Perticle1 = Instantiate(tmp_Perticle1);
+            GameObject Input1 = GameObject.Find("TinyExplosion(Clone)");
+
+            Vector3 newPosition = Input1.transform.position;
+            newPosition.x = target.transform.position.x;
+            newPosition.z = target.transform.position.z;
+            Input1.transform.position = newPosition;
+
             Invoke(nameof(DelayMethod2), 1f);
             SEprocess11 = true;
             process9 = false;
@@ -151,5 +201,6 @@ public class GameManagerScript : MonoBehaviour
         GameObject tmp_M = Resources.Load<GameObject>("Characters/chu-o-ji_Motion_Muscle_All");
         GameObject Muscle = Instantiate(tmp_M);
         Invoke(nameof(DelayMethod4), 0.4f);
+        judge4 = false;
     }
 }

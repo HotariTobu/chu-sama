@@ -20,6 +20,11 @@ public class TextBehaviourScript : MonoBehaviour
     private float objScale;
     private GameManagerScript gameManagerScript;
     public int SkyNum;
+    public string op1;
+    public string op2;
+    public string op3;
+    public string op4;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -41,7 +46,7 @@ public class TextBehaviourScript : MonoBehaviour
                 gameManagerScript.bgmprocess1 = true;
                 TextsM.enabled = true;
                 cnt++;
-                Invoke(nameof(DelayMethod1), 2f);
+                Invoke(nameof(DelayMethod1), 3f);
                 gameManagerScript.process1 = false;
             }
         }
@@ -53,7 +58,7 @@ public class TextBehaviourScript : MonoBehaviour
                 TextsM.enabled = true;
                 cnt++;
                 SkyNum++;
-                Invoke(nameof(DelayMethod1), 2f);
+                Invoke(nameof(DelayMethod1), 3f);
                 gameManagerScript.process1 = false;
             }
         }
@@ -65,23 +70,27 @@ public class TextBehaviourScript : MonoBehaviour
                 TextsM.enabled = true;
                 cnt++;
                 SkyNum++;
-                Invoke(nameof(DelayMethod1), 2f);
+                Invoke(nameof(DelayMethod1), 3f);
                 gameManagerScript.process1 = false;
             }
         }
 
         if(gameManagerScript.process3 == true){
+            gameManagerScript.probprocess = true;
             Invoke(nameof(DelayMethod2), 2f);
             Invoke(nameof(DelayMethod3), 4f);
             gameManagerScript.process3 = false;
         }
 
         if(gameManagerScript.process4 == true){
+
+
             Invoke(nameof(DelayMethod5), 2f);
         }
 
         if(gameManagerScript.process6 == true){
-            objScale+=0.001f;
+            if(TitleBehaviourScript.cnt == 1) objScale += 0.002f;
+            if(TitleBehaviourScript.cnt == 2) objScale += 0.0005f;
             Texts.transform.localScale = new Vector3 (objScale, objScale, objScale);
         }
 
@@ -99,7 +108,7 @@ public class TextBehaviourScript : MonoBehaviour
         }
 
         if(gameManagerScript.process910 == true){
-            TextsM.text = "答え　"+gameManagerScript.ans.ToString();
+            TextsM.text = "答え　"+gameManagerScript.ans.ToString() + ":" + gameManagerScript.ansprob;
             TextsM.enabled = true;
         }
 
@@ -125,7 +134,12 @@ public class TextBehaviourScript : MonoBehaviour
     }
 
     void DelayMethod3(){
-        TextsM.text = "犬";
+        Debug.Log(gameManagerScript.prob);
+        TextsM.text = gameManagerScript.prob;
+        qt1.text = op1;
+        qt2.text = op2;
+        qt3.text = op3;
+        qt4.text = op4;
         gameManagerScript.process4 = true;
     }
 

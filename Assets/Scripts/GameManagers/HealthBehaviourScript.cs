@@ -59,7 +59,7 @@ public class HealthBehaviourScript : MonoBehaviour
             panel.enabled = false;
         }
         Invoke(nameof(DelayMethod3), 1f);
-        Invoke(nameof(DelayMethod4), 3f);
+        Invoke(nameof(DelayMethod4), 4f);
         // gameManagerScript.process9 = true;
     }
 

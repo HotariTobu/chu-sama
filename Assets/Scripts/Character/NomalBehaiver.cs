@@ -22,6 +22,15 @@ public class NomalBehaiver : MonoBehaviour
     
     void Update()
     {
+        Vector3 newPosition = this.transform.position;
+        newPosition.x = gameManagerScript.target.transform.position.x;
+        newPosition.z = gameManagerScript.target.transform.position.z;
+        this.transform.position = newPosition;
+
+        Vector3 directionToFace = gameManagerScript.camera.transform.position - transform.position;
+        directionToFace.y = 0; // Keep only horizontal rotation
+        transform.rotation = Quaternion.LookRotation(directionToFace);
+
         if(gameManagerScript.process8 == true && gameManagerScript.isCollect == false){
             gameManagerScript.process8 = false;
             Invoke(nameof(DelayMethod4), 1.5f);
@@ -44,11 +53,12 @@ public class NomalBehaiver : MonoBehaviour
         GameObject tmp = Resources.Load<GameObject>("Characters/MajicBall");
         GameObject MajicAttack = Instantiate(tmp);
         GameObject Input1 = GameObject.Find("MajicBall(Clone)");
-        GameObject Input2 = GameObject.Find("Main Camera");
+        Input1.transform.position = new Vector3(gameManagerScript.target3.transform.position.x, 1f, gameManagerScript.target3.transform.position.z);
+        GameObject Input2 = GameObject.Find("Main Camera_akihabara");
         Vector3 direction = new Vector3(Input2.transform.position.x - this.gameObject.transform.position.x, Input2.transform.position.y - this.gameObject.transform.position.y, Input2.transform.position.z - this.gameObject.transform.position.z);
         Quaternion targetRotation = Quaternion.LookRotation(direction, Vector3.up) * Quaternion.Euler(0f, 180f, 0f);
         Vector3 eulerAngles = targetRotation.eulerAngles;
-        Vector3 Angles = new Vector3(-23f, -5f, 0f);
+        Vector3 Angles = new Vector3(0f, -2f, 0f);
         Input1.transform.Rotate(eulerAngles + Angles);
     }
 

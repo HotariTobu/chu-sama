@@ -6,6 +6,7 @@ public class AnswerBehaviourScript : MonoBehaviour
 {
     private bool judge1;
     private bool judge2;
+    private bool judge3;
     private Vector3 first1;
     private GameObject circle;
     private Vector3 first2;
@@ -18,8 +19,6 @@ public class AnswerBehaviourScript : MonoBehaviour
     {
         gameManagerScript = GetComponent<GameManagerScript>();
         panelBehaviourScript = GetComponent<PanelBehaviourScript>();
-        judge1 = false;
-        judge2 = false;
     }
 
     // Update is called once per frame
@@ -37,6 +36,7 @@ public class AnswerBehaviourScript : MonoBehaviour
                     GameObject Tmp = Instantiate(Input1);
                     Tmp.name = "circle";
                     circle = Tmp;
+                    judge3 = true;
 
                     if (circle != null)
                     {
@@ -70,53 +70,61 @@ public class AnswerBehaviourScript : MonoBehaviour
 
         if (circle != null)
         {
-            if (judge1 == true && circle.transform.position.y > 3)
-            {
-                circle.transform.position += new Vector3(0f, -0.15f, 0f);
-            }
+            Vector3 newPosition = circle.transform.position;
+            newPosition.x = gameManagerScript.target2.transform.position.x;
+            newPosition.z = gameManagerScript.target2.transform.position.z;
+            circle.transform.position = newPosition;
 
-            if (circle.transform.position.y <= 3)
-            {
-                if (circle.transform.position.z < 10)
-                {
-                    Invoke(nameof(DelayMethod1), 2f);
-                }
-                else
-                {
-                    judge1 = false;
-                    Invoke(nameof(DelayMethod2), 2f);
-                    circle.transform.position = first1;
-                }
-            }
+            Vector3 directionToFace = gameManagerScript.camera.transform.position - circle.transform.position;
+            directionToFace.y = 0; // Keep only horizontal rotation
+            circle.transform.rotation = Quaternion.LookRotation(directionToFace);
 
-            if (judge2 == true && circle.transform.position.y <= 3)
+            // if (judge1 == true && circle.transform.position.y > 3)
+            // {
+            //     circle.transform.position += new Vector3(0f, -0.15f, 0f);
+            // }
+
+            // if (circle.transform.position.y <= 3)
+            // {
+            //     if (circle.transform.position.z < 10)
+            //     {
+            //         Invoke(nameof(DelayMethod1), 2f);
+            //     }
+            //     else
+            //     {
+            //         judge1 = false;
+            //         Invoke(nameof(DelayMethod2), 2f);
+            //         circle.transform.position = first1;
+            //     }
+            // }
+
+            // if (judge2 == true && circle.transform.position.y <= 3)
+            // {
+            //     circle.transform.position += new Vector3(0f, 0f, 0.5f);
+            // }
+
+            if (circle.transform.position.y > 0.85)
             {
-                circle.transform.position += new Vector3(0f, 0f, 0.5f);
+                circle.transform.position += new Vector3(0f, -0.2f, 0f);
+            }else{
+                Invoke(nameof(DelayMethod2), 2f);
             }
         }
 
-        // if (Input.GetKeyDown(KeyCode.A))
-        // {
-        //     GameObject Input1 = Resources.Load<GameObject>("Characters/Cross");
-
-        //     if (Input1 != null)
-        //     {
-        //         GameObject Tmp = Instantiate(Input1);
-        //         Tmp.name = "cross";
-        //         cross = Tmp;
-
-        //         if (cross != null)
-        //         {
-        //             first2 = cross.transform.position;
-        //         }
-        //     }
-        // }
-
         if (cross != null)
         {
-            if (cross.transform.position.y > 3)
+            Vector3 newPosition = cross.transform.position;
+            newPosition.x = gameManagerScript.target2.transform.position.x;
+            newPosition.z = gameManagerScript.target2.transform.position.z;
+            cross.transform.position = newPosition;
+
+            Vector3 directionToFace = gameManagerScript.camera.transform.position - cross.transform.position;
+            directionToFace.y = 0; // Keep only horizontal rotation
+            cross.transform.rotation = Quaternion.LookRotation(directionToFace);
+
+            if (cross.transform.position.y > 0.85)
             {
-                cross.transform.position += new Vector3(0f, -0.15f, 0f);
+                cross.transform.position += new Vector3(0f, -0.2f, 0f);
             }else{
                 Invoke(nameof(DelayMethod3), 2f);
             }
