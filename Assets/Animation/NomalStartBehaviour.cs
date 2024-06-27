@@ -10,6 +10,12 @@ public class NomalStartBehaviour : StateMachineBehaviour
     
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+        GameObject gameManagerObject = GameObject.Find("GameManager");
+        if (gameManagerObject != null)
+        {
+            gameManagerScript = gameManagerObject.GetComponent<GameManagerScript>();
+        }
+
         GameObject tmp_Perticle1 = Resources.Load<GameObject>("Characters/MajicCircle");
         GameObject Perticle1 = Instantiate(tmp_Perticle1);
     }
@@ -17,8 +23,23 @@ public class NomalStartBehaviour : StateMachineBehaviour
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        if(animator.transform.position.y <= 0f){
-            animator.transform.position += new Vector3(0, 0.007f, 0);
+        GameObject Input1 = GameObject.Find("MajicCircle(Clone)");
+
+        Vector3 newPosition = Input1.transform.position;
+        newPosition.x = gameManagerScript.target.transform.position.x;
+        newPosition.z = gameManagerScript.target.transform.position.z;
+        Input1.transform.position = newPosition;
+
+        Vector3 directionToFace = gameManagerScript.camera.transform.position - Input1.transform.position;
+        directionToFace.y = 0; // Keep only horizontal rotation
+        Input1.transform.rotation = Quaternion.LookRotation(directionToFace);
+        Input1.transform.rotation *= Quaternion.Euler(-90, 0, 0);
+
+        if(animator.transform.position.y <= 0.3f)
+        {
+            Vector3 targetPosition = animator.transform.position;
+            targetPosition.y = 0.3f;
+            animator.transform.position = Vector3.Lerp(animator.transform.position, targetPosition, Time.deltaTime);
         }
     }
 

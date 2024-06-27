@@ -5,6 +5,8 @@ VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PoseRecorder", "PoseRecorder\PoseRecorder.csproj", "{6A8601F3-41CE-4EFD-AAA6-84B0D7A6458B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PoseClassifier", "PoseClassifier\PoseClassifier.csproj", "{93C0CEDF-2615-4774-A9CF-E6324652FC4E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -15,6 +17,10 @@ Global
 		{6A8601F3-41CE-4EFD-AAA6-84B0D7A6458B}.Debug|x64.Build.0 = Debug|x64
 		{6A8601F3-41CE-4EFD-AAA6-84B0D7A6458B}.Release|x64.ActiveCfg = Release|x64
 		{6A8601F3-41CE-4EFD-AAA6-84B0D7A6458B}.Release|x64.Build.0 = Release|x64
+		{93C0CEDF-2615-4774-A9CF-E6324652FC4E}.Debug|x64.ActiveCfg = Debug|x64
+		{93C0CEDF-2615-4774-A9CF-E6324652FC4E}.Debug|x64.Build.0 = Debug|x64
+		{93C0CEDF-2615-4774-A9CF-E6324652FC4E}.Release|x64.ActiveCfg = Release|x64
+		{93C0CEDF-2615-4774-A9CF-E6324652FC4E}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

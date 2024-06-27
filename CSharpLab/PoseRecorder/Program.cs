@@ -15,15 +15,14 @@ device.StartCameras(deviceConfig);
 
 var calibration = device.GetCalibration(deviceConfig.DepthMode, deviceConfig.ColorResolution);
 
-var tackerConfig = TrackerConfiguration.Default;
-using var tracker = Tracker.Create(calibration, tackerConfig);
+var trackerConfig = TrackerConfiguration.Default;
+using var tracker = Tracker.Create(calibration, trackerConfig);
 
 var path = $"{DateTime.Now:yyyy-MM-dd_HH-mm-ss}.dat";
 using var stream = File.OpenWrite(path);
 using var writer = new StreamWriter(stream);
 
 await Task.Delay(2000);
-Console.WriteLine(string.Join(' ', Enumerable.Repeat("START!", 100)));
 
 var frameCount = 0;
 
@@ -33,8 +32,6 @@ while (frameCount < MAX_FRAME_COUNT)
     {
         tracker.EnqueueCapture(capture);
     }
-
-    await Task.Delay(50);
 
     using var bodyFrame = tracker.PopResult();
     if (bodyFrame.NumberOfBodies == 0)
@@ -50,6 +47,8 @@ while (frameCount < MAX_FRAME_COUNT)
     writer.WriteLine(line);
 
     frameCount++;
+
+    Console.WriteLine(frameCount);
 }
 
 tracker.Shutdown();

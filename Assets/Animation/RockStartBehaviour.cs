@@ -20,12 +20,19 @@ public class RockStartBehaviour : StateMachineBehaviour
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-       if(animator.transform.position.y <= 1f){
-            animator.transform.position += new Vector3(0, 0.007f, 0);
+    //    if(animator.transform.position.y <= 0.4f){
+    //         animator.transform.position += new Vector3(0, 0.008f, 0);
+    //     }
+
+        if(Input1.transform.position.y <= -0.1f){
+            Input1.transform.position += new Vector3(0, 0.008f, 0);
         }
 
-        if(Input1.transform.position.y <= 0.5f){
-            Input1.transform.position += new Vector3(0, 0.007f, 0);
+        if(animator.transform.position.y <= 0.4f)
+        {
+            Vector3 targetPosition = animator.transform.position;
+            targetPosition.y = 0.4f;
+            animator.transform.position = Vector3.Lerp(animator.transform.position, targetPosition, Time.deltaTime);
         }
     }
 
