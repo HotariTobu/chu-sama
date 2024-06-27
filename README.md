@@ -30,3 +30,5 @@ nishio
 
 1. [NuGet Galleryのページ](https://www.nuget.org/packages/Emgu.TF.Lite.runtime.windows)から直接`.nupkg`ファイルをダウンロードする
 2. [7zip](https://7-zip.opensource.jp/)等で`.nupkg`ファイルを開き、その中の`/runtimes/win-x64/native/tfliteextern.dll`を`/Assets/Imported/EmguBin`にコピーする
+
+Unityのメニュー「NuGet」->「Restore Packages」を押す
