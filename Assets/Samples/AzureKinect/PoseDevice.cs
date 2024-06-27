@@ -5,6 +5,7 @@ using UnityEngine;
 using Microsoft.Azure.Kinect.BodyTracking;
 using Microsoft.Azure.Kinect.Sensor;
 using System;
+using System.IO;
 
 public class PoseDevice : IDisposable
 {
