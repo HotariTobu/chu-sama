@@ -108,7 +108,14 @@ public class TextBehaviourScript : MonoBehaviour
         }
 
         if(gameManagerScript.process910 == true){
-            TextsM.text = "答え　"+gameManagerScript.ans.ToString() + ":" + gameManagerScript.ansprob;
+            if(gameManagerScript.ans == 1)
+                TextsM.text = "答え Y:" + gameManagerScript.ansprob;
+            if(gameManagerScript.ans == 2)
+                TextsM.text = "答え M:" + gameManagerScript.ansprob;
+            if(gameManagerScript.ans == 3)
+                TextsM.text = "答え C:" + gameManagerScript.ansprob;
+            if(gameManagerScript.ans == 4)
+                TextsM.text = "答え A:" + gameManagerScript.ansprob;
             TextsM.enabled = true;
         }
 
@@ -136,10 +143,10 @@ public class TextBehaviourScript : MonoBehaviour
     void DelayMethod3(){
         Debug.Log(gameManagerScript.prob);
         TextsM.text = gameManagerScript.prob;
-        qt1.text = op1;
-        qt2.text = op2;
-        qt3.text = op3;
-        qt4.text = op4;
+        qt1.text = "Y:" + op1;
+        qt2.text = "M:" + op2;
+        qt3.text = "C:" + op3;
+        qt4.text = "A:" + op4;
         gameManagerScript.process4 = true;
     }
 

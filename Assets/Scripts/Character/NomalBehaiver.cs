@@ -71,6 +71,17 @@ public class NomalBehaiver : MonoBehaviour
         animator.SetTrigger("Damaged Trigger");
         gameManagerScript.SEprocess6 = true;
         Invoke(nameof(DelayMethod5), 1f);
+
+        GameObject tmp = Resources.Load<GameObject>("Characters/Slash1");
+        GameObject MajicAttack = Instantiate(tmp);
+        Vector3 cameraPosition = gameManagerScript.camera.transform.position;
+        Vector3 cameraForward = gameManagerScript.camera.transform.forward;
+        Vector3 spawnPosition = cameraPosition - cameraForward * 0.3f; // Adjust the multiplier to set the distance behind the camera
+        MajicAttack.transform.position = new Vector3(spawnPosition.x, MajicAttack.transform.position.y, spawnPosition.z);
+        Vector3 direction = gameManagerScript.camera.transform.position - this.gameObject.transform.position;
+        direction.y = 0; // Keep only horizontal rotation
+        MajicAttack.transform.rotation = Quaternion.LookRotation(direction, Vector3.up);
+        MajicAttack.transform.rotation *= Quaternion.Euler(0, 180, 0);
     }
 
     void DelayMethod4(){

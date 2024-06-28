@@ -64,9 +64,11 @@ public class GameManagerScript : MonoBehaviour
     private float interpolant = 0.05f;
     private Quaternion targetRot;
     private bool judge4;
+    private bool startjudge;
     private int cnt2;
     private bool firstRotationComplete = false;
     public bool Attackjudge;
+    public int poses;
 
     void Start()
     {
@@ -83,8 +85,9 @@ public class GameManagerScript : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.I)){
+        if((Input.GetKeyDown(KeyCode.I) || poses == 1) && startjudge == false){
             process1 = true;
+            startjudge = true;
         }
 
         if(process2 == true && CharaCnt == 1){
@@ -113,18 +116,18 @@ public class GameManagerScript : MonoBehaviour
 
         if(judge4){
             camera.transform.rotation = Quaternion.Lerp(camera.transform.rotation, targetRot, interpolant);
-            if(Quaternion.Angle(camera.transform.rotation, targetRot) < 0.01f && cnt2 == 0){
+            if(Quaternion.Angle(camera.transform.rotation, targetRot) < 0.005f && cnt2 == 0){
                 cnt2++;
                 angle = 179f;
                 axis = Vector3.down;
                 targetRot = Quaternion.AngleAxis(angle, axis) * camera.transform.rotation;
             }
 
-            if(Quaternion.Angle(camera.transform.rotation, targetRot) < 0.01f && cnt2 == 1){
+            if(Quaternion.Angle(camera.transform.rotation, targetRot) < 0.005f && cnt2 == 1){
                 cnt2++;
                 angle = 90f;
                 axis = Vector3.down;
-                interpolant = 0.2f;
+                interpolant = 0.05f;
                 targetRot = Quaternion.AngleAxis(angle, axis) * camera.transform.rotation;
             }
         }

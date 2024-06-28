@@ -15,21 +15,6 @@ public class QuizManager : MonoBehaviour
         gameManagerScript = GetComponent<GameManagerScript>();
         textBehaviourScript = GetComponent<TextBehaviourScript>();
         list.Add(-1);
-
-        // var categoryKey = "sample";
-
-        // var categoryAsset = Resources.Load<TextAsset>($"Quizzes/{categoryKey}");
-        // var category = JsonUtility.FromJson<Category>(categoryAsset.text);
-
-        // foreach (var problem in category.Problems)
-        // {
-        //     Debug.Log($"問題文: {problem.DifficultyLevel}|{problem.Body}");
-        //     foreach (var option in problem.Options)
-        //     {
-        //         var mark = option.IsCorrect ? "◯" : "×";
-        //         Debug.Log($"  {mark}選択肢: {option.Body}");
-        //     }
-        // }
     }
 
     // Update is called once per frame

@@ -24,7 +24,6 @@ public class TitleBehaviourScript : MonoBehaviour
     public float moveDuration = 0.5f; // 移動にかかる時間
     private float moveTime; // 移動の経過時間
     public static int cnt = 1;
-
     public AudioClip sound1;
     public AudioClip sound2;
     AudioSource audioSource;

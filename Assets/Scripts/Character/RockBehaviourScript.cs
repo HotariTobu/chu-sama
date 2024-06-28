@@ -76,12 +76,10 @@ public class RockBehaviourScript : MonoBehaviour
         Input1.transform.position = new Vector3(gameManagerScript.target.transform.position.x, 1f, gameManagerScript.target.transform.position.z);
         GameObject Input2 = GameObject.Find("Main Camera_akihabara");
         Vector3 direction = new Vector3(Input2.transform.position.x - this.gameObject.transform.position.x, Input2.transform.position.y - this.gameObject.transform.position.y, Input2.transform.position.z - this.gameObject.transform.position.z);
-        // Vector3 direction = new Vector3(Input2.transform.position.x - Input1.transform.position.x, Input2.transform.position.y - Input1.transform.position.y, Input2.transform.position.z - Input1.transform.position.z);
         Quaternion targetRotation = Quaternion.LookRotation(direction, Vector3.up) * Quaternion.Euler(0f, 180f, 0f);
         Vector3 eulerAngles = targetRotation.eulerAngles;
-        // Vector3 Angles = new Vector3(-5f, 0f, 0f);
-        // Input1.transform.Rotate(eulerAngles + Angles);
-        Input1.transform.Rotate(eulerAngles);
+        Vector3 Angles = new Vector3(-5f, 180f, 0f);
+        Input1.transform.Rotate(eulerAngles + Angles);
     }
 
     void DelayMethod2(){
@@ -94,6 +92,16 @@ public class RockBehaviourScript : MonoBehaviour
     void DelayMethod3(){
         animator.SetTrigger("Damaged Trigger");
         gameManagerScript.SEprocess10 = true;
+        GameObject tmp = Resources.Load<GameObject>("Characters/Slash1");
+        GameObject MajicAttack = Instantiate(tmp);
+        Vector3 cameraPosition = gameManagerScript.camera.transform.position;
+        Vector3 cameraForward = gameManagerScript.camera.transform.forward;
+        Vector3 spawnPosition = cameraPosition - cameraForward * 0.3f; // Adjust the multiplier to set the distance behind the camera
+        MajicAttack.transform.position = new Vector3(spawnPosition.x, MajicAttack.transform.position.y, spawnPosition.z);
+        Vector3 direction = gameManagerScript.camera.transform.position - this.gameObject.transform.position;
+        direction.y = 0; // Keep only horizontal rotation
+        MajicAttack.transform.rotation = Quaternion.LookRotation(direction, Vector3.up);
+        MajicAttack.transform.rotation *= Quaternion.Euler(0, 180, 0);
         Invoke(nameof(DelayMethod5), 1f);
     }
 

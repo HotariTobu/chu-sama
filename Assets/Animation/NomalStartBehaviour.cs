@@ -33,7 +33,7 @@ public class NomalStartBehaviour : StateMachineBehaviour
         Vector3 directionToFace = gameManagerScript.camera.transform.position - Input1.transform.position;
         directionToFace.y = 0; // Keep only horizontal rotation
         Input1.transform.rotation = Quaternion.LookRotation(directionToFace);
-        Input1.transform.rotation *= Quaternion.Euler(-90, 0, 0);
+        // Input1.transform.rotation *= Quaternion.Euler(-90, 0, 0);
 
         if(animator.transform.position.y <= 0.3f)
         {

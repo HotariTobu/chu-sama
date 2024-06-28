@@ -120,7 +120,7 @@ public class PanelBehaviourScript : MonoBehaviour
         }
 
         if(gameManagerScript.process6 == true){
-            if(Input.GetKeyDown(KeyCode.Z) && cnt != 1){
+            if((Input.GetKeyDown(KeyCode.Z) || gameManagerScript.poses == 5) && cnt != 1){
                 Allow1.enabled = true;
                 Allow2.enabled = true;
                 Allow_T1.rotation = Quaternion.Euler(0, 0, 180);
@@ -139,7 +139,7 @@ public class PanelBehaviourScript : MonoBehaviour
                 cnt = 1;
             }
 
-            if(Input.GetKeyDown(KeyCode.X) && cnt != 2){
+            if((Input.GetKeyDown(KeyCode.X) || gameManagerScript.poses == 6) && cnt != 2){
                 Allow1.enabled = true;
                 Allow2.enabled = true;
                 Allow_T1.rotation = Quaternion.Euler(0, 0, 180);
@@ -158,7 +158,7 @@ public class PanelBehaviourScript : MonoBehaviour
                 cnt = 2;
             }
 
-            if(Input.GetKeyDown(KeyCode.C) && cnt != 3){
+            if((Input.GetKeyDown(KeyCode.C) || gameManagerScript.poses == 7) && cnt != 3){
                 Allow1.enabled = true;
                 Allow2.enabled = true;
                 Allow_T1.rotation = Quaternion.Euler(0, 0, 0);
@@ -177,7 +177,7 @@ public class PanelBehaviourScript : MonoBehaviour
                 cnt = 3;
             }
 
-            if(Input.GetKeyDown(KeyCode.V) && cnt != 4){
+            if((Input.GetKeyDown(KeyCode.V) || gameManagerScript.poses == 8) && cnt != 4){
                 Allow1.enabled = true;
                 Allow2.enabled = true;
                 Allow_T1.rotation = Quaternion.Euler(0, 0, 0);

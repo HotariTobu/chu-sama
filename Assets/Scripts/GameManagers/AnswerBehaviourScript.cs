@@ -79,30 +79,6 @@ public class AnswerBehaviourScript : MonoBehaviour
             directionToFace.y = 0; // Keep only horizontal rotation
             circle.transform.rotation = Quaternion.LookRotation(directionToFace);
 
-            // if (judge1 == true && circle.transform.position.y > 3)
-            // {
-            //     circle.transform.position += new Vector3(0f, -0.15f, 0f);
-            // }
-
-            // if (circle.transform.position.y <= 3)
-            // {
-            //     if (circle.transform.position.z < 10)
-            //     {
-            //         Invoke(nameof(DelayMethod1), 2f);
-            //     }
-            //     else
-            //     {
-            //         judge1 = false;
-            //         Invoke(nameof(DelayMethod2), 2f);
-            //         circle.transform.position = first1;
-            //     }
-            // }
-
-            // if (judge2 == true && circle.transform.position.y <= 3)
-            // {
-            //     circle.transform.position += new Vector3(0f, 0f, 0.5f);
-            // }
-
             if (circle.transform.position.y > 0.85)
             {
                 circle.transform.position += new Vector3(0f, -0.2f, 0f);
