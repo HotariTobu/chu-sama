@@ -31,7 +31,10 @@ public class PoseBehaviourScript : MonoBehaviour
     {
         _poseDevice.Update();
         var pose = _poseDevice.CurrentPose;
-        if (_lastPose != pose){
+        if (_lastPose == pose)
+        {
+            gameManagerScript.poses = 0;
+        } else {
             switch(pose) {
                 case Pose.NONE:
                     gameManagerScript.poses = 0;

@@ -93,7 +93,6 @@ public class SoundBehaviourScript : MonoBehaviour
         }
 
         if(gameManagerScript.Stopbgmprocess1 == true){
-            Debug.Log("a");
             SoundManager.Instance.StopBGM(BGMSoundData.BGM.NomalBGM);
             gameManagerScript.Stopbgmprocess1 = false;
         }
@@ -104,7 +103,6 @@ public class SoundBehaviourScript : MonoBehaviour
         }
 
         if(gameManagerScript.Stopbgmprocess2 == true){
-            Debug.Log("b");
             SoundManager.Instance.StopBGM(BGMSoundData.BGM.RockBGM);
             gameManagerScript.Stopbgmprocess2 = false;
         }
@@ -115,16 +113,18 @@ public class SoundBehaviourScript : MonoBehaviour
         }
 
         if(gameManagerScript.Stopbgmprocess3 == true){
-            Debug.Log("c");
             SoundManager.Instance.StopBGM(BGMSoundData.BGM.MuscleBGM);
             gameManagerScript.Stopbgmprocess3 = false;
+        }
+
+        if(gameManagerScript.bgmprocess4 == true){
+            SoundManager.Instance.PlayBGM(BGMSoundData.BGM.ClearBGM);
+            gameManagerScript.bgmprocess4 = false;
         }
       
         if(gameManagerScript.timebgmprocess1 == true){
             SoundManager.Instance.PlayTIME(TIMESoundData.TIME.Time);
             gameManagerScript.timebgmprocess1 = false;
         }
-
-        if(Input.GetKeyDown(KeyCode.K)) SoundManager.Instance.StopBGM(BGMSoundData.BGM.NomalBGM);
     }
 }

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Splines;
+using TMPro;
 
 public class GameManagerScript : MonoBehaviour
 {
@@ -20,6 +21,7 @@ public class GameManagerScript : MonoBehaviour
     public bool bgmprocess1;
     public bool bgmprocess2;
     public bool bgmprocess3;
+    public bool bgmprocess4;
     public bool Stopbgmprocess1;
     public bool Stopbgmprocess2;
     public bool Stopbgmprocess3;
@@ -69,6 +71,10 @@ public class GameManagerScript : MonoBehaviour
     private bool firstRotationComplete = false;
     public bool Attackjudge;
     public int poses;
+    private bool movejudge;
+    public bool clear;
+    private bool firework;
+    private bool bgmjudge;
 
     void Start()
     {
@@ -172,6 +178,28 @@ public class GameManagerScript : MonoBehaviour
             }
         }
 
+        if (process10 == true && SucceedJudge == true)
+        {
+            Invoke(nameof(DelayMethod6), 3f);
+
+            if(movejudge == true){
+                float rotationLerpSpeed = 0.005f;
+                float positionLerpSpeed = 0.005f;
+                Quaternion targetRotation = Quaternion.Euler(90, 0, 0);
+                Vector3 targetPosition = new Vector3(-35f, 40f, -28f);
+                camera.transform.rotation = Quaternion.Lerp(camera.transform.rotation, targetRotation, rotationLerpSpeed);
+                camera.transform.position = Vector3.Lerp(camera.transform.position, targetPosition, positionLerpSpeed);
+
+                if (Vector3.Distance(camera.transform.position, targetPosition) < 20f && firework == false)
+                {
+                    GameObject tmp_Perticle1 = Resources.Load<GameObject>("Characters/FireWork");
+                    GameObject Perticle1 = Instantiate(tmp_Perticle1);
+                    firework = true;
+                }
+            }
+        }
+
+
         if(healthBehaviourScript.health == 0){
             process10 = true;
             SucceedJudge = false;
@@ -205,5 +233,25 @@ public class GameManagerScript : MonoBehaviour
         GameObject Muscle = Instantiate(tmp_M);
         Invoke(nameof(DelayMethod4), 0.4f);
         judge4 = false;
+    }
+
+    void DelayMethod6(){
+        movejudge = true;
+        clear = true;
+        GameObject Input1 = GameObject.Find("Clear");
+        Renderer renderer = Input1.GetComponent<Renderer>();
+        if (renderer != null)
+        {
+            renderer.enabled = true;
+        }
+
+        if(bgmjudge == false){
+            Invoke(nameof(DelayMethod7), 2f);
+            bgmjudge = true;
+        }
+    }
+
+    void DelayMethod7(){
+        bgmprocess4 = true;
     }
 }

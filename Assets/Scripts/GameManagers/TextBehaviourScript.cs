@@ -121,8 +121,10 @@ public class TextBehaviourScript : MonoBehaviour
 
         if(gameManagerScript.process10 == true){
             if(gameManagerScript.SucceedJudge == true){
-                TextsM.text = "Clear!";
-                TextsM.enabled = true;
+                if(gameManagerScript.clear){
+                    // TextsM.text = "Clear!";
+                    // TextsM.enabled = true;
+                }
             }else{
                 TextsM.text = "GAME OVER";
                 TextsM.enabled = true;
