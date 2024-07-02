@@ -27,6 +27,16 @@ public class TitleBehaviourScript : MonoBehaviour
     public AudioClip sound1;
     public AudioClip sound2;
     AudioSource audioSource;
+    public int poses;
+    private Vector3 first;
+    private Vector3 first1;
+    private Vector3 first2;
+    private Vector3 first3;
+    private Vector3 first4;
+    private Vector3 first5;
+    private Vector3 first6;
+    private Vector3 first7;
+
 
     // Start is called before the first frame update
     void Start()
@@ -42,6 +52,22 @@ public class TitleBehaviourScript : MonoBehaviour
         moveTime = 0f;
         cnt = 1;
         audioSource = GetComponent<AudioSource>();
+        GameObject Input1 = GameObject.Find("chu-o-ji_Motion_Magic_All");
+        first = Input1.transform.position;
+        GameObject Input2 = GameObject.Find("left");
+        first1 = Input2.transform.position;
+        GameObject Input3 = GameObject.Find("right");
+        first2 = Input3.transform.position;
+        GameObject Input4 = GameObject.Find("maru");
+        first3 = Input4.transform.position;
+        GameObject Input5 = GameObject.Find("Y");
+        first4 = Input5.transform.position;
+        GameObject Input6 = GameObject.Find("M");
+        first5 = Input6.transform.position;
+        GameObject Input7 = GameObject.Find("C");
+        first6 = Input7.transform.position;
+        GameObject Input8 = GameObject.Find("A");
+        first7 = Input8.transform.position;
     }
 
     // Update is called once per frame
@@ -52,7 +78,7 @@ public class TitleBehaviourScript : MonoBehaviour
             Allow2.enabled = true;
             Allow3.enabled = false;
             Allow4.enabled = true;
-        }else if(cnt == 2){
+        }else if(cnt == 4 || cnt == 5){
             Allow1.enabled = true;
             Allow2.enabled = false;
             Allow3.enabled = true;
@@ -63,6 +89,46 @@ public class TitleBehaviourScript : MonoBehaviour
             Allow2.enabled = true;
             Allow3.enabled = true;
             Allow4.enabled = true;
+        }
+
+        if(cnt == 1 || cnt == 2){
+            GameObject Input1 = GameObject.Find("chu-o-ji_Motion_Magic_All");
+            Input1.transform.position = new Vector3(0f, 100f, 0f);
+        }else{
+            GameObject Input1 = GameObject.Find("chu-o-ji_Motion_Magic_All");
+            Input1.transform.position = first;
+        }
+
+        if(cnt == 1){
+            GameObject Input2 = GameObject.Find("left");
+            Input2.transform.position = first1;
+            GameObject Input3 = GameObject.Find("right");
+            Input3.transform.position = first2;
+            GameObject Input4 = GameObject.Find("maru");
+            Input4.transform.position = first3;
+            GameObject Input5 = GameObject.Find("Y");
+            Input5.transform.position = first4;
+            GameObject Input6 = GameObject.Find("M");
+            Input6.transform.position = first5;
+            GameObject Input7 = GameObject.Find("C");
+            Input7.transform.position = first6;
+            GameObject Input8 = GameObject.Find("A");
+            Input8.transform.position = first7;
+        }else{
+            GameObject Input2 = GameObject.Find("left");
+            Input2.transform.position = new Vector3(0f, 100f, 0f);
+            GameObject Input3 = GameObject.Find("right");
+            Input3.transform.position = new Vector3(0f, 100f, 0f);
+            GameObject Input4 = GameObject.Find("maru");
+            Input4.transform.position = new Vector3(0f, 100f, 0f);
+            GameObject Input5 = GameObject.Find("Y");
+            Input5.transform.position = new Vector3(0f, 100f, 0f);
+            GameObject Input6 = GameObject.Find("M");
+            Input6.transform.position = new Vector3(0f, 100f, 0f);
+            GameObject Input7 = GameObject.Find("C");
+            Input7.transform.position = new Vector3(0f, 100f, 0f);
+            GameObject Input8 = GameObject.Find("A");
+            Input8.transform.position = new Vector3(0f, 100f, 0f);
         }
 
         if(judge1)
@@ -114,34 +180,36 @@ public class TitleBehaviourScript : MonoBehaviour
             }
         }
 
-        if(Input.GetKeyDown(KeyCode.A)){
+        if(Input.GetKeyDown(KeyCode.A) || poses == 1){
             judge1 = true;
         }
 
-        if(Input.GetKeyDown(KeyCode.D)){
+        if(Input.GetKeyDown(KeyCode.D) || poses == 2){
             judge2 = true;
         }
 
-        if(Input.GetKeyDown(KeyCode.S)){
-            judge3 = true;
+        if(cnt == 3 || cnt == 4 || cnt == 5){
+            if(Input.GetKeyDown(KeyCode.S) || poses == 3){
+                judge3 = true;
+            }
+
+            if(Input.GetKeyUp(KeyCode.S) || poses != 3){
+                judge3 = false;
+                time3 = 0;
+                gage.fillAmount = 0;
+            }
         }
 
-        if(Input.GetKeyUp(KeyCode.A)){
+        if(Input.GetKeyUp(KeyCode.A) || poses != 1){
             judge1 = false;
             time1 = 0;
             Allow1.fillAmount = 0;
         }
 
-        if(Input.GetKeyUp(KeyCode.D)){
+        if(Input.GetKeyUp(KeyCode.D) || poses != 2){
             judge2 = false;
             time2 = 0;
             Allow2.fillAmount = 0;
-        }
-
-        if(Input.GetKeyUp(KeyCode.S)){
-            judge3 = false;
-            time3 = 0;
-            gage.fillAmount = 0;
         }
 
         // パネルを徐々に移動させる処理
