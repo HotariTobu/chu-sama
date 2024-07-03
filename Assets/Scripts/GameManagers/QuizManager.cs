@@ -21,10 +21,9 @@ public class QuizManager : MonoBehaviour
     void Update()
     {
         if(gameManagerScript.probprocess == true){
-            Debug.Log(TitleBehaviourScript.cnt);
             var categoryKey = "kanji";
 
-            if(TitleBehaviourScript.cnt == 2){
+            if(TitleBehaviourScript.cnt == 4){
                 categoryKey = "history";
             }
 

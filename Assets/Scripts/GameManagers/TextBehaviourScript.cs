@@ -89,8 +89,8 @@ public class TextBehaviourScript : MonoBehaviour
         }
 
         if(gameManagerScript.process6 == true){
-            if(TitleBehaviourScript.cnt == 1) objScale += 0.002f;
-            if(TitleBehaviourScript.cnt == 2) objScale += 0.0005f;
+            if(TitleBehaviourScript.cnt == 3) objScale += 0.002f;
+            if(TitleBehaviourScript.cnt == 4) objScale += 0.0005f;
             Texts.transform.localScale = new Vector3 (objScale, objScale, objScale);
         }
 

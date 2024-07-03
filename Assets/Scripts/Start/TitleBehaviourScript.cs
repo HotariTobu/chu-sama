@@ -193,20 +193,20 @@ public class TitleBehaviourScript : MonoBehaviour
                 judge3 = true;
             }
 
-            if(Input.GetKeyUp(KeyCode.S) || poses != 3){
+            if(Input.GetKeyUp(KeyCode.S)){
                 judge3 = false;
                 time3 = 0;
                 gage.fillAmount = 0;
             }
         }
 
-        if(Input.GetKeyUp(KeyCode.A) || poses != 1){
+        if(Input.GetKeyUp(KeyCode.A)){
             judge1 = false;
             time1 = 0;
             Allow1.fillAmount = 0;
         }
 
-        if(Input.GetKeyUp(KeyCode.D) || poses != 2){
+        if(Input.GetKeyUp(KeyCode.D)){
             judge2 = false;
             time2 = 0;
             Allow2.fillAmount = 0;
@@ -228,7 +228,7 @@ public class TitleBehaviourScript : MonoBehaviour
     }
 
     void DelayMethod1(){
-        SceneManager.LoadScene("MahiroScene");
+        SceneManager.LoadScene("Sample_005339_08932_25_14");
     }
 
 }
