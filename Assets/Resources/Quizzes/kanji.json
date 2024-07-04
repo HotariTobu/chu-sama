@@ -140,12 +140,12 @@
             "Body": "空",
             "Options": [
                 {
-                    "IsCorrect": true,
-                    "Body": "そら"
-                },
-                {
                     "IsCorrect": false,
                     "Body": "りく"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "そら"
                 },
                 {
                     "IsCorrect": false,
@@ -162,10 +162,6 @@
             "Body": "海",
             "Options": [
                 {
-                    "IsCorrect": true,
-                    "Body": "うみ"
-                },
-                {
                     "IsCorrect": false,
                     "Body": "だいち"
                 },
@@ -176,6 +172,10 @@
                 {
                     "IsCorrect": false,
                     "Body": "りく"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "うみ"
                 }
             ]
         },
@@ -184,16 +184,16 @@
             "Body": "角",
             "Options": [
                 {
-                    "IsCorrect": true,
-                    "Body": "つの"
-                },
-                {
                     "IsCorrect": false,
                     "Body": "しっぽ"
                 },
                 {
                     "IsCorrect": false,
                     "Body": "つみ"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "つの"
                 },
                 {
                     "IsCorrect": false,
@@ -206,16 +206,16 @@
             "Body": "時間",
             "Options": [
                 {
-                    "IsCorrect": true,
-                    "Body": "じかん"
-                },
-                {
                     "IsCorrect": false,
                     "Body": "とけい"
                 },
                 {
                     "IsCorrect": false,
                     "Body": "はり"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "じかん"
                 },
                 {
                     "IsCorrect": false,
@@ -228,10 +228,6 @@
             "Body": "魚",
             "Options": [
                 {
-                    "IsCorrect": true,
-                    "Body": "さかな"
-                },
-                {
                     "IsCorrect": false,
                     "Body": "うみ"
                 },
@@ -242,6 +238,10 @@
                 {
                     "IsCorrect": false,
                     "Body": "ほね"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "さかな"
                 }
             ]
         },
@@ -286,6 +286,72 @@
                 {
                     "IsCorrect": false,
                     "Body": "なかま"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 0,
+            "Body": "王子",
+            "Options": [
+                {
+                    "IsCorrect": false,
+                    "Body": "おうし"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "おうじ"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "チュー"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "チューおうじ"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 0,
+            "Body": "中央",
+            "Options": [
+                {
+                    "IsCorrect": false,
+                    "Body": "ちゅうおうじ"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "ちゅうおう"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "なかおう"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "はちおうじ"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 0,
+            "Body": "粉雪",
+            "Options": [
+                {
+                    "IsCorrect": false,
+                    "Body": "ふんせつ"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "こなゆき"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "ゆき"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "ふんゆき"
                 }
             ]
         },
@@ -408,16 +474,324 @@
                     "Body": "いやしい"
                 },
                 {
+                    "IsCorrect": false,
+                    "Body": "くるしい"
+                },
+                {
                     "IsCorrect": true,
                     "Body": "まずしい"
                 },
                 {
                     "IsCorrect": false,
-                    "Body": "くるしい"
+                    "Body": "かなしい"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 30,
+            "Body": "肥料",
+            "Options": [
+                {
+                    "IsCorrect": false,
+                    "Body": "こりょう"
                 },
                 {
                     "IsCorrect": false,
-                    "Body": "かなしい"
+                    "Body": "こしな"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "ひしな"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "ひりょう"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 30,
+            "Body": "破綻",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "はたん"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "はじょう"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "ぱたん"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "ぱじょう"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 30,
+            "Body": "進捗",
+            "Options": [
+                {
+                    "IsCorrect": false,
+                    "Body": "しんぽ"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "しんほ"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "しんちょく"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "しんぼ"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 30,
+            "Body": "遵守",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "じゅんしゅ"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "そんしゅ"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "そんじゅ"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "じゅんじゅ"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 30,
+            "Body": "出納",
+            "Options": [
+                {
+                    "IsCorrect": false,
+                    "Body": "しゅつのう"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "しゅつない"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "しゅのう"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "すいとう"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 30,
+            "Body": "約定",
+            "Options": [
+                {
+                    "IsCorrect": false,
+                    "Body": "やくてい"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "やくじょう"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "しゃくてい"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "しゃくじょう"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 30,
+            "Body": "市政",
+            "Options": [
+                {
+                    "IsCorrect": false,
+                    "Body": "しい"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "しせい"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "いちい"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "いのい"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 30,
+            "Body": "婉曲",
+            "Options": [
+                {
+                    "IsCorrect": false,
+                    "Body": "わんきょく"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "えんきょく"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "わんく"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "えんく"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 30,
+            "Body": "所謂",
+            "Options": [
+                {
+                    "IsCorrect": false,
+                    "Body": "しょせん"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "しょい"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "いわゆる"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "しょえ"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 30,
+            "Body": "境内",
+            "Options": [
+                {
+                    "IsCorrect": false,
+                    "Body": "けいない"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "きょうない"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "きょうだい"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "けいだい"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 30,
+            "Body": "汎用",
+            "Options": [
+                {
+                    "IsCorrect": false,
+                    "Body": "ぼんよう"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "はんよう"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "たんよう"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "ぱんよう"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 30,
+            "Body": "素行",
+            "Options": [
+                {
+                    "IsCorrect": false,
+                    "Body": "すこう"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "そこう"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "すぎょう"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "そぎょう"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 30,
+            "Body": "会釈",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "えしゃく"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "かいしゃく"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "あいさつ"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "あいしゃく"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 30,
+            "Body": "肥料",
+            "Options": [
+                {
+                    "IsCorrect": false,
+                    "Body": "こりょう"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "ひりょう"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "こしな"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "ひしな"
                 }
             ]
         },
@@ -558,16 +932,16 @@
             "Body": "雪渓",
             "Options": [
                 {
+                    "IsCorrect": false,
+                    "Body": "せけい"
+                },
+                {
                     "IsCorrect": true,
                     "Body": "せっけい"
                 },
                 {
                     "IsCorrect": false,
                     "Body": "なだれ"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "せけい"
                 },
                 {
                     "IsCorrect": false,
@@ -954,28 +1328,6 @@
                 {
                     "IsCorrect": false,
                     "Body": "けのび"
-                }
-            ]
-        },
-        {
-            "DifficultyLevel": 2,
-            "Body": "",
-            "Options": [
-                {
-                    "IsCorrect": false,
-                    "Body": ""
-                },
-                {
-                    "IsCorrect": true,
-                    "Body": "そしゃく"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "そかい"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "そこ"
                 }
             ]
         },
