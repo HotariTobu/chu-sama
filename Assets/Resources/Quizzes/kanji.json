@@ -140,12 +140,12 @@
             "Body": "空",
             "Options": [
                 {
-                    "IsCorrect": true,
-                    "Body": "そら"
-                },
-                {
                     "IsCorrect": false,
                     "Body": "りく"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "そら"
                 },
                 {
                     "IsCorrect": false,
@@ -162,10 +162,6 @@
             "Body": "海",
             "Options": [
                 {
-                    "IsCorrect": true,
-                    "Body": "うみ"
-                },
-                {
                     "IsCorrect": false,
                     "Body": "だいち"
                 },
@@ -176,6 +172,10 @@
                 {
                     "IsCorrect": false,
                     "Body": "りく"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "うみ"
                 }
             ]
         },
@@ -184,16 +184,16 @@
             "Body": "角",
             "Options": [
                 {
-                    "IsCorrect": true,
-                    "Body": "つの"
-                },
-                {
                     "IsCorrect": false,
                     "Body": "しっぽ"
                 },
                 {
                     "IsCorrect": false,
                     "Body": "つみ"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "つの"
                 },
                 {
                     "IsCorrect": false,
@@ -206,16 +206,16 @@
             "Body": "時間",
             "Options": [
                 {
-                    "IsCorrect": true,
-                    "Body": "じかん"
-                },
-                {
                     "IsCorrect": false,
                     "Body": "とけい"
                 },
                 {
                     "IsCorrect": false,
                     "Body": "はり"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "じかん"
                 },
                 {
                     "IsCorrect": false,
@@ -228,10 +228,6 @@
             "Body": "魚",
             "Options": [
                 {
-                    "IsCorrect": true,
-                    "Body": "さかな"
-                },
-                {
                     "IsCorrect": false,
                     "Body": "うみ"
                 },
@@ -242,6 +238,10 @@
                 {
                     "IsCorrect": false,
                     "Body": "ほね"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "さかな"
                 }
             ]
         },
@@ -474,12 +474,12 @@
                     "Body": "いやしい"
                 },
                 {
-                    "IsCorrect": true,
-                    "Body": "まずしい"
-                },
-                {
                     "IsCorrect": false,
                     "Body": "くるしい"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "まずしい"
                 },
                 {
                     "IsCorrect": false,
@@ -496,16 +496,16 @@
                     "Body": "こりょう"
                 },
                 {
-                    "IsCorrect": true,
-                    "Body": "ひりょう"
-                },
-                {
                     "IsCorrect": false,
                     "Body": "こしな"
                 },
                 {
                     "IsCorrect": false,
                     "Body": "ひしな"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "ひりょう"
                 }
             ]
         },
@@ -514,12 +514,12 @@
             "Body": "破綻",
             "Options": [
                 {
-                    "IsCorrect": false,
-                    "Body": "はじょう"
-                },
-                {
                     "IsCorrect": true,
                     "Body": "はたん"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "はじょう"
                 },
                 {
                     "IsCorrect": false,
@@ -540,12 +540,12 @@
                     "Body": "しんぽ"
                 },
                 {
-                    "IsCorrect": true,
-                    "Body": "しんちょく"
-                },
-                {
                     "IsCorrect": false,
                     "Body": "しんほ"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "しんちょく"
                 },
                 {
                     "IsCorrect": false,
@@ -558,12 +558,12 @@
             "Body": "遵守",
             "Options": [
                 {
-                    "IsCorrect": false,
-                    "Body": "そんしゅ"
-                },
-                {
                     "IsCorrect": true,
                     "Body": "じゅんしゅ"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "そんしゅ"
                 },
                 {
                     "IsCorrect": false,
@@ -584,16 +584,16 @@
                     "Body": "しゅつのう"
                 },
                 {
-                    "IsCorrect": true,
-                    "Body": "すいとう"
-                },
-                {
                     "IsCorrect": false,
                     "Body": "しゅつない"
                 },
                 {
                     "IsCorrect": false,
                     "Body": "しゅのう"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "すいとう"
                 }
             ]
         },
@@ -672,12 +672,12 @@
                     "Body": "しょせん"
                 },
                 {
-                    "IsCorrect": true,
-                    "Body": "いわゆる"
-                },
-                {
                     "IsCorrect": false,
                     "Body": "しょい"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "いわゆる"
                 },
                 {
                     "IsCorrect": false,
@@ -694,16 +694,16 @@
                     "Body": "けいない"
                 },
                 {
-                    "IsCorrect": true,
-                    "Body": "けいだい"
-                },
-                {
                     "IsCorrect": false,
                     "Body": "きょうない"
                 },
                 {
                     "IsCorrect": false,
                     "Body": "きょうだい"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "けいだい"
                 }
             ]
         },
@@ -756,12 +756,12 @@
             "Body": "会釈",
             "Options": [
                 {
-                    "IsCorrect": false,
-                    "Body": "かいしゃく"
-                },
-                {
                     "IsCorrect": true,
                     "Body": "えしゃく"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "かいしゃく"
                 },
                 {
                     "IsCorrect": false,
@@ -932,16 +932,16 @@
             "Body": "雪渓",
             "Options": [
                 {
+                    "IsCorrect": false,
+                    "Body": "せけい"
+                },
+                {
                     "IsCorrect": true,
                     "Body": "せっけい"
                 },
                 {
                     "IsCorrect": false,
                     "Body": "なだれ"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "せけい"
                 },
                 {
                     "IsCorrect": false,
@@ -1328,28 +1328,6 @@
                 {
                     "IsCorrect": false,
                     "Body": "けのび"
-                }
-            ]
-        },
-        {
-            "DifficultyLevel": 2,
-            "Body": "",
-            "Options": [
-                {
-                    "IsCorrect": false,
-                    "Body": ""
-                },
-                {
-                    "IsCorrect": true,
-                    "Body": "そしゃく"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "そかい"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "そこ"
                 }
             ]
         },
