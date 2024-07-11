@@ -1,0 +1,701 @@
+{
+    "$schema": "./category.schema.json",
+    "Problems": [
+        {
+            "DifficultyLevel": 0,
+            "Body": "apple",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "りんご"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "みかん"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "メロン"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "きゅうり"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 0,
+            "Body": "pear",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "梨"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "りんご"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "キウイ"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "柿"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 0,
+            "Body": "lemon",
+            "Options": [
+                
+                {
+                    "IsCorrect": false,
+                    "Body": "すだち"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "みかん"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "オレンジ"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "レモン"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 5,
+            "Body": "peach",
+            "Options": [
+                
+                {
+                    "IsCorrect": false,
+                    "Body": "りんご"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "メロン"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "もも"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "梨"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 22,
+            "Body": "fig",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "いちじく"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "あけび"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "くわ"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "柿"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 35,
+            "Body": "brief",
+            "Options": [
+                
+                {
+                    "IsCorrect": false,
+                    "Body": "現在の"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "短時間の"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "を応用する"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "熟した"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 30,
+            "Body": "arise",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "発生する"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "熟した"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "少しの間"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "を応用する"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 30,
+            "Body": "emerge",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "現れる"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "繰り返す"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "を晒す"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "進歩する"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 20,
+            "Body": "prison",
+            "Options": [
+                
+                {
+                    "IsCorrect": false,
+                    "Body": "痛み"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "飢え"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "少しの間"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "刑務所"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 10,
+            "Body": "advance",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "進歩する"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "合法的な"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "食欲"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "すぐに"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 17,
+            "Body": "warn",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "警告する"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "熟した"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "を許す"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "合法的な"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 3,
+            "Body": "wind",
+            "Options": [
+                
+                {
+                    "IsCorrect": false,
+                    "Body": "近づく"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "天気"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "風を巻く"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "国境"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 10,
+            "Body": "blossom",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "花"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "穏やかな"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "葉っぱ"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "部分"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 8,
+            "Body": "attend",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "に出席する"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "を積む"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "国境"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "に近づく"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 7,
+            "Body": "temperature",
+            "Options": [
+                
+                {
+                    "IsCorrect": false,
+                    "Body": "晴れた"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "温かい"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "温度"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "蒸れた"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 20,
+            "Body": "agree",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "同意する"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "晴れた"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "を生き延びる"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "地域"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 15,
+            "Body": "calm",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "穏やかな"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "外国の"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "植物"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "部品"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 7,
+            "Body": "foregin",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "外国の"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "卒業する"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "果物"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "を言い合う"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 4,
+            "Body": "view",
+            "Options": [
+                
+                {
+                    "IsCorrect": false,
+                    "Body": "成果"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "眺め"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "部品"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "謝罪"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 13,
+            "Body": "marry",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "と結婚する"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "に達する"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "大陸"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "分ける"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 10,
+            "Body": "leaf",
+            "Options": [
+                
+                {
+                    "IsCorrect": false,
+                    "Body": "大陸"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "花"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "謝罪"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "葉っぱ"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 19,
+            "Body": "approach",
+            "Options": [
+                
+                {
+                    "IsCorrect": false,
+                    "Body": "に似ている"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "成長する"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "に近づく"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "離れる"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 28,
+            "Body": "argue",
+            "Options": [
+                
+                {
+                    "IsCorrect": false,
+                    "Body": "成長する"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "と述べる"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "を言い合う"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "に答える"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 38,
+            "Body": "fine",
+            "Options": [
+                
+                {
+                    "IsCorrect": false,
+                    "Body": "天気"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "卒業する"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "晴れた"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "謝罪する"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 26,
+            "Body": "reach",
+            "Options": [
+                
+                {
+                    "IsCorrect": false,
+                    "Body": "不平を言う"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "に達する"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "大陸"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "に答える"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 23,
+            "Body": "part",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "部品"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "天気"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "国境"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "解決策"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 20,
+            "Body": "grow",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "成長する"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "に従う"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "に入る"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "に答える"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 30,
+            "Body": "horizon",
+            "Options": [
+                
+                {
+                    "IsCorrect": false,
+                    "Body": "天気"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "並行"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "晴れ"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "地平線"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 18,
+            "Body": "main",
+            "Options": [
+                
+                {
+                    "IsCorrect": false,
+                    "Body": "重要な"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "要求"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "主な"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "を数える"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 15,
+            "Body": "remember",
+            "Options": [
+                {
+                    "IsCorrect": false,
+                    "Body": "近い、接近した"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "を覚えている"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "を経営する"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "遠い"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 37,
+            "Body": "encounter",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "遭遇する"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "保護する"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "を統合する"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "を制限する"
+                }
+            ]
+        }
+    ]
+}
