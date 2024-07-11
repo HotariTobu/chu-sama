@@ -69,7 +69,7 @@
         },
         {
             "DifficultyLevel": 2,
-            "Body": "江戸幕府を開いた人物は？",
+            "Body": "江戸幕府を開いた人は？",
             "Options": [
                 {
                     "IsCorrect": false,
@@ -113,7 +113,7 @@
         },
         {
             "DifficultyLevel": 7,
-            "Body": "710年から日本の首都になった、奈良の都は？",
+            "Body": "710年から日本の首都になったのは？",
             "Options": [
                 {
                     "IsCorrect": true,
@@ -135,7 +135,7 @@
         },
         {
             "DifficultyLevel": 12,
-            "Body": "土偶が多く出土するのは、何時代の遺跡は？",
+            "Body": "土偶が多く出土するのは、何時代の遺跡？",
             "Options": [
                 {
                     "IsCorrect": true,
@@ -267,7 +267,7 @@
         },
         {
             "DifficultyLevel": 19,
-            "Body": "「中大兄皇子」が天皇になった時の名前は何？",
+            "Body": "中大兄皇子が天皇になった時の名前は？",
             "Options": [
                 {
                     "IsCorrect": false,
@@ -333,7 +333,7 @@
         },
         {
             "DifficultyLevel": 9,
-            "Body": "「学問のすゝめ」という本を書き、人々に影響を与えたひとは？",
+            "Body": "「学問のすゝめ」を書いたひとは？",
             "Options": [
                 {
                     "IsCorrect": true,
@@ -355,7 +355,7 @@
         },
         {
             "DifficultyLevel": 17,
-            "Body": "「東海道五十三次」などを描いた浮世絵の画家は？",
+            "Body": "「東海道五十三次」を描いた浮世絵の画家は？",
             "Options": [
                 {
                     "IsCorrect": false,
@@ -377,7 +377,7 @@
         },
         {
             "DifficultyLevel": 57,
-            "Body": "『曽根崎心中』などを手がけた、人形浄瑠璃の脚本家は？",
+            "Body": "『曽根崎心中』を手がけた、人形浄瑠璃の脚本家は？",
             "Options": [
                 {
                     "IsCorrect": true,
@@ -399,7 +399,7 @@
         },
         {
             "DifficultyLevel": 45,
-            "Body": "1911年に日本が関税自主権を回復した際の外務大臣は？",
+            "Body": "日本が関税自主権を回復した際の外務大臣は？",
             "Options": [
                 {
                     "IsCorrect": true,
@@ -421,7 +421,7 @@
         },
         {
             "DifficultyLevel": 68,
-            "Body": "明治維新で活躍した大久保利通の、出身である藩はどこ？",
+            "Body": "大久保利通の、出身である藩はどこ？",
             "Options": [
                 {
                     "IsCorrect": true,
@@ -443,7 +443,7 @@
         },
         {
             "DifficultyLevel": 40,
-            "Body": "唐から戒律を伝えるために渡日した人物は？",
+            "Body": "唐から戒律を伝えるため渡日した人は？",
             "Options": [
                 {
                     "IsCorrect": true,
@@ -465,7 +465,7 @@
         },
         {
             "DifficultyLevel": 60,
-            "Body": "日露戦争で指揮を取り、日本を勝利に導いた人は？",
+            "Body": "日露戦争で指揮を取り勝利に導いた人は？",
             "Options": [
                 {
                     "IsCorrect": true,
@@ -487,7 +487,7 @@
         },
         {
             "DifficultyLevel": 59,
-            "Body": "1868年に起こった、旧幕府軍と新政府軍との内戦はなに？",
+            "Body": "1868年の旧幕府軍と新政府軍との内戦は？",
             "Options": [
                 {
                     "IsCorrect": true,
@@ -509,7 +509,7 @@
         },
         {
             "DifficultyLevel": 69,
-            "Body": "1878年、紀尾井坂の変で暗殺されたのは？",
+            "Body": "紀尾井坂の変で暗殺されたのは？",
             "Options": [
                 {
                     "IsCorrect": true,
@@ -619,7 +619,7 @@
         },
         {
             "DifficultyLevel": 46,
-            "Body": "「おくのほそ道」などを書いた江戸時代の俳人は？",
+            "Body": "「おくのほそ道」を書いた俳人は？",
             "Options": [
                 {
                     "IsCorrect": true,
@@ -663,7 +663,7 @@
         },
         {
             "DifficultyLevel": 87,
-            "Body": "鎌倉幕府が朝廷を監視するために置いた幕府の重職はなに？",
+            "Body": "鎌倉幕府が朝廷を監視するために置いた重職はなに？",
             "Options": [
                 {
                     "IsCorrect": true,
