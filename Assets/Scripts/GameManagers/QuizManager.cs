@@ -23,32 +23,39 @@ public class QuizManager : MonoBehaviour
         if(gameManagerScript.probprocess == true){
             var categoryKey = "kanji";
 
-            if(TitleBehaviourScript.cnt == 4){
+            if(TitleBehaviourScript.cnt == 3){
                 categoryKey = "history";
             }
 
             var categoryAsset = Resources.Load<TextAsset>($"Quizzes/{categoryKey}");
             var category = JsonUtility.FromJson<Category>(categoryAsset.text);
             int num = -1;
+
             if(gameManagerScript.CharaCnt == 1){
                 while(list.Contains(num)){
                     num = Random.Range(0, 6);
                 }
+
                 list.Add(num);
                 gameManagerScript.prob = category.Problems[num].Body;
+
             }else if(gameManagerScript.CharaCnt == 2){
                 while(list.Contains(num)){
                     num = Random.Range(7, 13);
                 }
+
                 list.Add(num);
                 gameManagerScript.prob = category.Problems[num].Body;
+
             }else{
                 while(list.Contains(num)){
                     num = Random.Range(14, 20);
                 }
+
                 list.Add(num);
                 gameManagerScript.prob = category.Problems[num].Body;
             }
+
             textBehaviourScript.op1 = category.Problems[num].Options[0].Body;
             textBehaviourScript.op2 = category.Problems[num].Options[1].Body;
             textBehaviourScript.op3 = category.Problems[num].Options[2].Body;
@@ -60,6 +67,7 @@ public class QuizManager : MonoBehaviour
                     gameManagerScript.ansprob = category.Problems[num].Options[i].Body;
                 }
             }
+            
             gameManagerScript.probprocess = false;
         }
     }

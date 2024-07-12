@@ -78,7 +78,7 @@ public class TitleBehaviourScript : MonoBehaviour
             Allow2.enabled = true;
             Allow3.enabled = false;
             Allow4.enabled = true;
-        }else if(cnt == 4 || cnt == 5){
+        }else if(cnt == 3 || cnt == 4){
             Allow1.enabled = true;
             Allow2.enabled = false;
             Allow3.enabled = true;
@@ -91,7 +91,7 @@ public class TitleBehaviourScript : MonoBehaviour
             Allow4.enabled = true;
         }
 
-        if(cnt == 1 || cnt == 2){
+        if(cnt == 1){
             GameObject Input1 = GameObject.Find("chu-o-ji_Motion_Magic_All");
             Input1.transform.position = new Vector3(0f, 100f, 0f);
         }else{
@@ -188,7 +188,7 @@ public class TitleBehaviourScript : MonoBehaviour
             judge2 = true;
         }
 
-        if(cnt == 3 || cnt == 4 || cnt == 5){
+        if(cnt == 2 || cnt == 3){
             if(Input.GetKeyDown(KeyCode.S) || poses == 3){
                 judge3 = true;
             }

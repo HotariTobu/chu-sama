@@ -36,7 +36,7 @@ public class TimeBehaviourScript : MonoBehaviour
         if (TimerNum < 10 && distance < 5 && !movedr)
         {
             childPos.x += 18f;
-            Children.position = childPos;
+            // Children.position = childPos;
             movedr = true; 
         }
 

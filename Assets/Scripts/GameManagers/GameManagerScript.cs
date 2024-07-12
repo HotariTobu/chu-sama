@@ -75,6 +75,7 @@ public class GameManagerScript : MonoBehaviour
     public bool clear;
     private bool firework;
     private bool bgmjudge;
+    public bool judge5;
 
     void Start()
     {

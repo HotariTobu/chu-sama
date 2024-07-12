@@ -62,7 +62,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ad8ef26619d287f4c88aae1df1d01b6e, type: 3}
       propertyPath: m_Name
-      value: chu-o-ji_Motion_Magic_All (1)
+      value: chu-o-ji_Motion_Magic_All
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -132,6 +132,10 @@ PrefabInstance:
     - target: {fileID: 4866291349848416049, guid: cfef8ae992a4925458acf34450bff8fd, type: 3}
       propertyPath: ShapeModule.type
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4866291349848416049, guid: cfef8ae992a4925458acf34450bff8fd, type: 3}
+      propertyPath: ShapeModule.enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4866291349848416049, guid: cfef8ae992a4925458acf34450bff8fd, type: 3}
       propertyPath: ShapeModule.m_Scale.x
