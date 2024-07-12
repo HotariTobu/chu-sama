@@ -2,684 +2,698 @@
     "$schema": "./category.schema.json",
     "Problems": [
         {
+            "DifficultyLevel": 0,
+            "Body": "apple",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "りんご"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "みかん"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "メロン"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "きゅうり"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 0,
+            "Body": "pear",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "梨"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "りんご"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "キウイ"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "柿"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 0,
+            "Body": "lemon",
+            "Options": [
+                
+                {
+                    "IsCorrect": false,
+                    "Body": "すだち"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "みかん"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "オレンジ"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "レモン"
+                }
+            ]
+        },
+        {
             "DifficultyLevel": 5,
-            "Body": "日本の初代内閣総理大臣は？",
+            "Body": "peach",
             "Options": [
+                
+                {
+                    "IsCorrect": false,
+                    "Body": "りんご"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "メロン"
+                },
                 {
                     "IsCorrect": true,
-                    "Body": "伊藤博文"
+                    "Body": "もも"
                 },
                 {
                     "IsCorrect": false,
-                    "Body": "田中角栄"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "小室圭"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "大隈重信"
+                    "Body": "梨"
                 }
             ]
         },
         {
-            "DifficultyLevel": 10,
-            "Body": "日本にキリスト教を伝えるため来航した人は？",
+            "DifficultyLevel": 22,
+            "Body": "fig",
             "Options": [
                 {
                     "IsCorrect": true,
-                    "Body": "ザビエル"
+                    "Body": "いちじく"
                 },
                 {
                     "IsCorrect": false,
-                    "Body": "ペリー"
+                    "Body": "あけび"
                 },
                 {
                     "IsCorrect": false,
-                    "Body": "ジョニー"
+                    "Body": "くわ"
                 },
                 {
                     "IsCorrect": false,
-                    "Body": "ジョン"
+                    "Body": "柿"
                 }
             ]
         },
         {
-            "DifficultyLevel": 3,
-            "Body": "日本が唐へ派遣した使節は？",
+            "DifficultyLevel": 35,
+            "Body": "brief",
             "Options": [
+                
                 {
                     "IsCorrect": false,
-                    "Body": "遣隋使"
+                    "Body": "現在の"
                 },
                 {
                     "IsCorrect": true,
-                    "Body": "遣唐使"
+                    "Body": "短時間の"
                 },
                 {
                     "IsCorrect": false,
-                    "Body": "渡来人"
+                    "Body": "を応用する"
                 },
                 {
                     "IsCorrect": false,
-                    "Body": "原人"
-                }
-            ]
-        },
-        {
-            "DifficultyLevel": 2,
-            "Body": "江戸幕府を開いた人は？",
-            "Options": [
-                {
-                    "IsCorrect": false,
-                    "Body": "卑弥呼"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "織田信長"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "豊臣秀吉"
-                },
-                {
-                    "IsCorrect": true,
-                    "Body": "徳川家康"
-                }
-            ]
-        },
-        {
-            "DifficultyLevel": 3,
-            "Body": "鎌倉幕府を開いた人は？",
-            "Options": [
-                {
-                    "IsCorrect": true,
-                    "Body": "源頼朝"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "平清盛"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "桓武天皇"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "北条政子"
-                }
-            ]
-        },
-        {
-            "DifficultyLevel": 7,
-            "Body": "710年から日本の首都になったのは？",
-            "Options": [
-                {
-                    "IsCorrect": true,
-                    "Body": "平城京"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "平安京"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "平和京"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "平成京"
-                }
-            ]
-        },
-        {
-            "DifficultyLevel": 12,
-            "Body": "土偶が多く出土するのは、何時代の遺跡？",
-            "Options": [
-                {
-                    "IsCorrect": true,
-                    "Body": "縄文時代"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "弥生時代"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "古墳時代"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "江戸時代"
-                }
-            ]
-        },
-        {
-            "DifficultyLevel": 9,
-            "Body": "1853年、黒船で日本を開国させた人は？",
-            "Options": [
-                {
-                    "IsCorrect": true,
-                    "Body": "ペリー"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "ザビエル"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "マッカーサー"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "ルーズベルト"
-                }
-            ]
-        },
-        {
-            "DifficultyLevel": 20,
-            "Body": "江戸時代はどれくらい続いた？",
-            "Options": [
-                {
-                    "IsCorrect": true,
-                    "Body": "265年"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "２週間"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "165年"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "365年"
-                }
-            ]
-        },
-        {
-            "DifficultyLevel": 9,
-            "Body": "縄文時代のゴミ捨て場の遺跡は？",
-            "Options": [
-                {
-                    "IsCorrect": true,
-                    "Body": "貝塚"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "骨塚"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "戸塚"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "土塚"
-                }
-            ]
-        },
-        {
-            "DifficultyLevel": 10,
-            "Body": "銀閣寺を建てた人は？",
-            "Options": [
-                {
-                    "IsCorrect": true,
-                    "Body": "足利義政"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "足利尊氏"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "足利義満"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "ペリー"
-                }
-            ]
-        },
-        {
-            "DifficultyLevel": 18,
-            "Body": "「解体新書」を書いた人は？",
-            "Options": [
-                {
-                    "IsCorrect": true,
-                    "Body": "杉田玄白"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "本居宣長"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "伊藤博文"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "近松門左衛門"
-                }
-            ]
-        },
-        {
-            "DifficultyLevel": 19,
-            "Body": "中大兄皇子が天皇になった時の名前は？",
-            "Options": [
-                {
-                    "IsCorrect": false,
-                    "Body": "天武天皇"
-                },
-                {
-                    "IsCorrect": true,
-                    "Body": "天智天皇"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "聖武天皇"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "後醍醐天皇"
-                }
-            ]
-        },
-        {
-            "DifficultyLevel": 10,
-            "Body": "「枕草子」を書いた人は？",
-            "Options": [
-                {
-                    "IsCorrect": true,
-                    "Body": "清少納言"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "紫式部"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "小野妹子"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "卑弥呼"
+                    "Body": "熟した"
                 }
             ]
         },
         {
             "DifficultyLevel": 30,
-            "Body": "初めてほぼ正確な日本地図を作成した人は？",
+            "Body": "arise",
             "Options": [
                 {
                     "IsCorrect": true,
-                    "Body": "伊能忠敬"
+                    "Body": "発生する"
                 },
                 {
                     "IsCorrect": false,
-                    "Body": "本居宣長"
+                    "Body": "熟した"
                 },
                 {
                     "IsCorrect": false,
-                    "Body": "松尾芭蕉"
+                    "Body": "少しの間"
                 },
                 {
                     "IsCorrect": false,
-                    "Body": "織田信長"
+                    "Body": "を応用する"
                 }
             ]
         },
         {
-            "DifficultyLevel": 9,
-            "Body": "「学問のすゝめ」を書いたひとは？",
+            "DifficultyLevel": 30,
+            "Body": "emerge",
             "Options": [
                 {
                     "IsCorrect": true,
-                    "Body": "福沢諭吉"
+                    "Body": "現れる"
                 },
                 {
                     "IsCorrect": false,
-                    "Body": "与謝野晶子"
+                    "Body": "繰り返す"
                 },
                 {
                     "IsCorrect": false,
-                    "Body": "野口秀雄"
+                    "Body": "を晒す"
                 },
                 {
                     "IsCorrect": false,
-                    "Body": "渋沢栄一"
-                }
-            ]
-        },
-        {
-            "DifficultyLevel": 17,
-            "Body": "「東海道五十三次」を描いた浮世絵の画家は？",
-            "Options": [
-                {
-                    "IsCorrect": false,
-                    "Body": "葛飾北斎"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "雪舟"
-                },
-                {
-                    "IsCorrect": true,
-                    "Body": "歌川広重"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "東洲斎写楽"
-                }
-            ]
-        },
-        {
-            "DifficultyLevel": 57,
-            "Body": "『曽根崎心中』を手がけた、人形浄瑠璃の脚本家は？",
-            "Options": [
-                {
-                    "IsCorrect": true,
-                    "Body": "近松門左衛門"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "井原西鶴"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "菱川師宣"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "川端康成"
-                }
-            ]
-        },
-        {
-            "DifficultyLevel": 45,
-            "Body": "日本が関税自主権を回復した際の外務大臣は？",
-            "Options": [
-                {
-                    "IsCorrect": true,
-                    "Body": "小村寿太郎"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "陸奥宗光"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "大久保利通"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "板垣退助"
-                }
-            ]
-        },
-        {
-            "DifficultyLevel": 68,
-            "Body": "大久保利通の、出身である藩はどこ？",
-            "Options": [
-                {
-                    "IsCorrect": true,
-                    "Body": "薩摩藩"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "長州藩"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "土佐藩"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "チャーハン"
-                }
-            ]
-        },
-        {
-            "DifficultyLevel": 40,
-            "Body": "唐から戒律を伝えるため渡日した人は？",
-            "Options": [
-                {
-                    "IsCorrect": true,
-                    "Body": "鑑真"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "溥儀"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "小野妹子"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "鄧小平"
-                }
-            ]
-        },
-        {
-            "DifficultyLevel": 60,
-            "Body": "日露戦争で指揮を取り勝利に導いた人は？",
-            "Options": [
-                {
-                    "IsCorrect": true,
-                    "Body": "東郷平八郎"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "板垣退助"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "坂本龍馬"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "乃木希典"
-                }
-            ]
-        },
-        {
-            "DifficultyLevel": 59,
-            "Body": "1868年の旧幕府軍と新政府軍との内戦は？",
-            "Options": [
-                {
-                    "IsCorrect": true,
-                    "Body": "戊辰戦争"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "戊申戦争"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "応仁の乱"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "鳥羽伏見の戦い"
-                }
-            ]
-        },
-        {
-            "DifficultyLevel": 69,
-            "Body": "紀尾井坂の変で暗殺されたのは？",
-            "Options": [
-                {
-                    "IsCorrect": true,
-                    "Body": "大久保利通"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "岩倉具視"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "木戸孝允"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "伊藤博文"
-                }
-            ]
-        },
-        {
-            "DifficultyLevel": 57,
-            "Body": "鉄鋼の国産化を目指して設立された官営工場はなに？",
-            "Options": [
-                {
-                    "IsCorrect": true,
-                    "Body": "八幡製鉄所"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "日本製鉄所"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "漢陽製鉄所"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "鞍山製鉄所"
-                }
-            ]
-        },
-        {
-            "DifficultyLevel": 78,
-            "Body": "二十一ヶ条の要求を行なった時の日本の首相は？",
-            "Options": [
-                {
-                    "IsCorrect": true,
-                    "Body": "大隈重信"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "原敬"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "寺内正穀"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "加藤高明"
+                    "Body": "進歩する"
                 }
             ]
         },
         {
             "DifficultyLevel": 20,
-            "Body": "1929年に起きた世界的な不景気は？",
+            "Body": "prison",
+            "Options": [
+                
+                {
+                    "IsCorrect": false,
+                    "Body": "痛み"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "飢え"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "少しの間"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "刑務所"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 10,
+            "Body": "advance",
             "Options": [
                 {
                     "IsCorrect": true,
-                    "Body": "世界恐慌"
+                    "Body": "進歩する"
                 },
                 {
                     "IsCorrect": false,
-                    "Body": "世界大飢饉"
+                    "Body": "合法的な"
                 },
                 {
                     "IsCorrect": false,
-                    "Body": "リーマンショック"
+                    "Body": "食欲"
                 },
                 {
                     "IsCorrect": false,
-                    "Body": "世界飢饉"
+                    "Body": "すぐに"
                 }
             ]
         },
         {
             "DifficultyLevel": 17,
-            "Body": "603年に冠位十二階を定めた人は？",
+            "Body": "warn",
             "Options": [
                 {
                     "IsCorrect": true,
-                    "Body": "聖徳太子"
+                    "Body": "警告する"
                 },
                 {
                     "IsCorrect": false,
-                    "Body": "小野妹子"
+                    "Body": "熟した"
                 },
                 {
                     "IsCorrect": false,
-                    "Body": "中大兄皇子"
+                    "Body": "を許す"
                 },
                 {
                     "IsCorrect": false,
-                    "Body": "中臣鎌足"
+                    "Body": "合法的な"
                 }
             ]
         },
         {
-            "DifficultyLevel": 46,
-            "Body": "「おくのほそ道」を書いた俳人は？",
+            "DifficultyLevel": 3,
+            "Body": "wind",
+            "Options": [
+                
+                {
+                    "IsCorrect": false,
+                    "Body": "近づく"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "天気"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "風を巻く"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "国境"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 10,
+            "Body": "blossom",
             "Options": [
                 {
                     "IsCorrect": true,
-                    "Body": "松尾芭蕉"
+                    "Body": "花"
                 },
                 {
                     "IsCorrect": false,
-                    "Body": "雪舟"
+                    "Body": "穏やかな"
                 },
                 {
                     "IsCorrect": false,
-                    "Body": "森鴎外"
+                    "Body": "葉っぱ"
                 },
                 {
                     "IsCorrect": false,
-                    "Body": "葛飾北斎"
+                    "Body": "部分"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 8,
+            "Body": "attend",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "に出席する"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "を積む"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "国境"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "に近づく"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 7,
+            "Body": "temperature",
+            "Options": [
+                
+                {
+                    "IsCorrect": false,
+                    "Body": "晴れた"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "温かい"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "温度"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "蒸れた"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 20,
+            "Body": "agree",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "同意する"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "晴れた"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "を生き延びる"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "地域"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 15,
+            "Body": "calm",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "穏やかな"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "外国の"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "植物"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "部品"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 7,
+            "Body": "foregin",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "外国の"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "卒業する"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "果物"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "を言い合う"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 4,
+            "Body": "view",
+            "Options": [
+                
+                {
+                    "IsCorrect": false,
+                    "Body": "成果"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "眺め"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "部品"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "謝罪"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 13,
+            "Body": "marry",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "と結婚する"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "に達する"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "大陸"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "分ける"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 10,
+            "Body": "leaf",
+            "Options": [
+                
+                {
+                    "IsCorrect": false,
+                    "Body": "大陸"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "花"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "謝罪"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "葉っぱ"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 19,
+            "Body": "approach",
+            "Options": [
+                
+                {
+                    "IsCorrect": false,
+                    "Body": "に似ている"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "成長する"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "に近づく"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "離れる"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 28,
+            "Body": "argue",
+            "Options": [
+                
+                {
+                    "IsCorrect": false,
+                    "Body": "成長する"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "と述べる"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "を言い合う"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "に答える"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 38,
+            "Body": "fine",
+            "Options": [
+                
+                {
+                    "IsCorrect": false,
+                    "Body": "天気"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "卒業する"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "晴れた"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "謝罪する"
                 }
             ]
         },
         {
             "DifficultyLevel": 26,
-            "Body": "日本軍が南満州鉄道を爆破し，満州を占領したできごとは？",
+            "Body": "reach",
             "Options": [
+                
+                {
+                    "IsCorrect": false,
+                    "Body": "不平を言う"
+                },
                 {
                     "IsCorrect": true,
-                    "Body": "満州事変"
+                    "Body": "に達する"
                 },
                 {
                     "IsCorrect": false,
-                    "Body": "満州事件"
+                    "Body": "大陸"
                 },
                 {
                     "IsCorrect": false,
-                    "Body": "二二六事件"
-                },
-                {
-                    "IsCorrect": false,
-                    "Body": "三・一五事件"
+                    "Body": "に答える"
                 }
             ]
         },
         {
-            "DifficultyLevel": 87,
-            "Body": "鎌倉幕府が朝廷を監視するために置いた重職はなに？",
+            "DifficultyLevel": 23,
+            "Body": "part",
             "Options": [
                 {
                     "IsCorrect": true,
-                    "Body": "六波羅探題"
+                    "Body": "部品"
                 },
                 {
                     "IsCorrect": false,
-                    "Body": "守護"
+                    "Body": "天気"
                 },
                 {
                     "IsCorrect": false,
-                    "Body": "地頭"
+                    "Body": "国境"
                 },
                 {
                     "IsCorrect": false,
-                    "Body": "政所"
+                    "Body": "解決策"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 20,
+            "Body": "grow",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "成長する"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "に従う"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "に入る"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "に答える"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 30,
+            "Body": "horizon",
+            "Options": [
+                
+                {
+                    "IsCorrect": false,
+                    "Body": "天気"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "並行"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "晴れ"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "地平線"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 18,
+            "Body": "main",
+            "Options": [
+                
+                {
+                    "IsCorrect": false,
+                    "Body": "重要な"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "要求"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "主な"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "を数える"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 15,
+            "Body": "remember",
+            "Options": [
+                {
+                    "IsCorrect": false,
+                    "Body": "近い、接近した"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "を覚えている"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "を経営する"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "遠い"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 37,
+            "Body": "encounter",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "遭遇する"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "保護する"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "を統合する"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "を制限する"
                 }
             ]
         }
