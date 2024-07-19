@@ -36,6 +36,7 @@ public class TitleBehaviourScript : MonoBehaviour
     private Vector3 first5;
     private Vector3 first6;
     private Vector3 first7;
+    private Vector3 first8;
     private bool right;
     private bool left;
 
@@ -69,6 +70,8 @@ public class TitleBehaviourScript : MonoBehaviour
         first6 = Input7.transform.position;
         GameObject Input8 = GameObject.Find("A");
         first7 = Input8.transform.position;
+        GameObject Input9 = GameObject.Find("batu");
+        first8 = Input9.transform.position;
     }
 
     // Update is called once per frame
@@ -126,6 +129,8 @@ public class TitleBehaviourScript : MonoBehaviour
             Input7.transform.position = first6;
             GameObject Input8 = GameObject.Find("A");
             Input8.transform.position = first7;
+            GameObject Input9 = GameObject.Find("batu");
+            Input9.transform.position = first8;
         }else{
             GameObject Input2 = GameObject.Find("left");
             Input2.transform.position = new Vector3(0f, 100f, 0f);
@@ -141,6 +146,8 @@ public class TitleBehaviourScript : MonoBehaviour
             Input7.transform.position = new Vector3(0f, 100f, 0f);
             GameObject Input8 = GameObject.Find("A");
             Input8.transform.position = new Vector3(0f, 100f, 0f);
+            GameObject Input9 = GameObject.Find("batu");
+            Input9.transform.position = new Vector3(0f, 100f, 0f);
         }
 
         if(judge1 && left)
