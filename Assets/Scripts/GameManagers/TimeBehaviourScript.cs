@@ -39,7 +39,7 @@ public class TimeBehaviourScript : MonoBehaviour
         {
             childPos.x += 18f;
             // Children.position = childPos;
-            movedr = true; 
+            movedr = true;
         }
 
         if(gameManagerScript.process5 == true){
@@ -55,7 +55,7 @@ public class TimeBehaviourScript : MonoBehaviour
 
         if (gameManagerScript.process6 == true && judge == true)
         {
-            Debug.Log("a");
+            Debug.Log($"a {TimerNum}");
             if (TimerNum < 0.00001)
             {
                 panelBehaviourScript.rep = 5;

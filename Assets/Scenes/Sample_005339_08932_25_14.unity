@@ -1394,6 +1394,7 @@ GameObject:
   - component: {fileID: 386085738}
   - component: {fileID: 386085737}
   - component: {fileID: 386085746}
+  - component: {fileID: 386085747}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1631,6 +1632,18 @@ MonoBehaviour:
   StartlightObject: {fileID: 780943347}
   NextlightObject: {fileID: 1946227066}
   SpotlightObject: {fileID: 580603419}
+--- !u!114 &386085747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 386085736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb97f969b23668e4eb43952148481d47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &437998652
 GameObject:
   m_ObjectHideFlags: 0
