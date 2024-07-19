@@ -55,7 +55,7 @@ public class TimeBehaviourScript : MonoBehaviour
 
         if (gameManagerScript.process6 == true && judge == true)
         {
-            Debug.Log($"a {TimerNum}");
+            // Debug.Log($"a {TimerNum}");
             if (TimerNum < 0.00001)
             {
                 panelBehaviourScript.rep = 5;
