@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Splines;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameManagerScript : MonoBehaviour
 {
@@ -91,6 +92,10 @@ public class GameManagerScript : MonoBehaviour
 
     void Update()
     {
+        if(Input.GetKeyDown(KeyCode.I)){
+            SceneManager.LoadScene("StartScene");
+        }
+
         if(startjudge == true){
             process1 = true;
             startjudge = false;
