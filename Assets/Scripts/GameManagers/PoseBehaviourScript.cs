@@ -8,20 +8,27 @@ using System;
 
 public class PoseBehaviourScript : MonoBehaviour
 {
-    private PoseDevice _poseDevice;
+    private PoseDevice? _poseDevice;
     private GameManagerScript gameManagerScript;
 
     // Start is called before the first frame update
     void Start()
     {
         gameManagerScript = GetComponent<GameManagerScript>();
-        _poseDevice = new();
-        _poseDevice.Start();
+        try
+        {
+            _poseDevice = new();
+            _poseDevice.Start();
+        }
+        catch (System.Exception e)
+        {
+            Debug.LogError(e);
+        }
     }
 
     void OnDestroy()
     {
-        _poseDevice.Dispose();
+        _poseDevice?.Dispose();
     }
 
     private Pose _lastPose;
@@ -29,13 +36,21 @@ public class PoseBehaviourScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (_poseDevice == null)
+        {
+            return;
+        }
+
         _poseDevice.Update();
         var pose = _poseDevice.CurrentPose;
         if (_lastPose == pose)
         {
             gameManagerScript.poses = 0;
-        } else {
-            switch(pose) {
+        }
+        else
+        {
+            switch (pose)
+            {
                 case Pose.NONE:
                     gameManagerScript.poses = 0;
                     break;
