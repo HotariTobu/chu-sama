@@ -6,8 +6,8 @@ public class ProblemAnimation : MonoBehaviour
 {
     [SerializeField] public float StartScale = 1;
     [SerializeField] public float EndScale = 2;
-    [SerializeField] public float StartOpacity = 0;
-    [SerializeField] public float EndOpacity = 1;
+    [SerializeField] public float StartDepth = 0.4f;
+    [SerializeField] public float EndDepth = 1;
     [SerializeField] public float Duration = 15;
 
     private Dictionary<Text3D, Coroutine> _coroutines = new();
@@ -41,7 +41,7 @@ public class ProblemAnimation : MonoBehaviour
             var t = elapsedTime / Duration;
 
             problemText.Scale = Mathf.Lerp(StartScale, EndScale, t);
-            problemText.Opacity = Mathf.Lerp(StartOpacity, EndOpacity, t);
+            problemText.Depth = Mathf.Lerp(StartDepth, EndDepth, t);
 
             yield return null;
         }

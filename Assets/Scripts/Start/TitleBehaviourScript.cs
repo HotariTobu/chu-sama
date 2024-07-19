@@ -199,11 +199,11 @@ public class TitleBehaviourScript : MonoBehaviour
             }
         }
 
-        if(Input.GetKeyDown(KeyCode.A) || poses == 1){
+        if(Input.GetKeyDown(KeyCode.A) || poses == 2){
             judge1 = true;
         }
 
-        if(Input.GetKeyDown(KeyCode.D) || poses == 2){
+        if(Input.GetKeyDown(KeyCode.D) || poses == 1){
             judge2 = true;
         }
 

@@ -35,11 +35,15 @@ public class Text3D
         }
     }
 
-    public float Opacity
+    public float Depth
     {
         set
         {
-            _depthText.alpha = value;
+            _depthText.color = new Color(
+                value,
+                _depthText.color.g,
+                _depthText.color.b
+                );
         }
     }
 }
