@@ -29,10 +29,12 @@ public class TimeBehaviourScript : MonoBehaviour
         Vector3 parentPos = Parent.position;
         float distance = parentPos.x - childPos.x;
 
-        if (TimerNum > 0)
-        {
-            TimerNum -= Time.deltaTime;
-            TimerText.text = ((int)TimerNum).ToString();
+        if(gameManagerScript.process6 == true){
+            if (TimerNum > 0)
+            {
+                TimerNum -= Time.deltaTime;
+                TimerText.text = ((int)TimerNum).ToString();
+            }
         }
 
         if (TimerNum < 10 && distance < 5 && !movedr)
@@ -53,15 +55,16 @@ public class TimeBehaviourScript : MonoBehaviour
             gameManagerScript.timebgmprocess1 = true;
         }
 
-        if (gameManagerScript.process6 == true && judge == true)
-        {
+        // if (gameManagerScript.process6 == true && judge == true)
+        // {
             // Debug.Log($"a {TimerNum}");
-            if (TimerNum < 0.00001)
+            if (TimerNum < 0.00001 && panelBehaviourScript.cnt == 0 && gameManagerScript.process6 == true)
             {
                 panelBehaviourScript.rep = 5;
-                Debug.Log("b");
+                gameManagerScript.process6 = false;
+                // Debug.Log("b");
             }
-        }
+        // }
 
         if (gameManagerScript.process7 == true)
         {

@@ -24,7 +24,7 @@ public class PanelBehaviourScript : MonoBehaviour
     private float time;
     private float longTapTime;
     private bool judge;
-    private int cnt;
+    public int cnt;
     private GameManagerScript gameManagerScript;
     private bool judge2;
     public int rep;
@@ -175,7 +175,7 @@ public class PanelBehaviourScript : MonoBehaviour
         TimeBehaviourScript TimeBehaviourScript = GetComponent<TimeBehaviourScript>();
 
         if(gameManagerScript.process6 == true){
-            if(redAllow2.fillAmount == 1f || blueAllow2.fillAmount == 1f || yellowAllow2.fillAmount == 1f || greenAllow2.fillAmount == 1f || (TimeBehaviourScript.TimerNum <= 0.01f && TimeBehaviourScript.TimerNum >= -0.01f)){
+            if(redAllow2.fillAmount == 1f || blueAllow2.fillAmount == 1f || yellowAllow2.fillAmount == 1f || greenAllow2.fillAmount == 1f || ((TimeBehaviourScript.TimerNum <= 0.01f && TimeBehaviourScript.TimerNum >= -0.01f) && cnt != 0)){
                 if(judge3 == false){
                     rep = cnt;
                     redAllow2.fillAmount = 0f;

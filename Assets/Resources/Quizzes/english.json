@@ -479,23 +479,222 @@
         }, 
         {
             "DifficultyLevel": 15,
-            "Body": "devastate",
+            "Body": "reminiscence",
             "Options": [
                 {
                     "IsCorrect": false,
-                    "Body": "競争"
+                    "Body": "進行"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "計画"
                 },
                 {
                     "IsCorrect": true,
-                    "Body": "和解"
+                    "Body": "回想"
                 },
                 {
                     "IsCorrect": false,
-                    "Body": "調査"
+                    "Body": "忘却"
+                }
+            ]
+        }, 
+        {
+            "DifficultyLevel": 15,
+            "Body": "abate",
+            "Options": [
+                {
+                    "IsCorrect": false,
+                    "Body": "強化する"
                 },
                 {
                     "IsCorrect": false,
-                    "Body": "訓練"
+                    "Body": "維持させる"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "増加させる"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "減少させる"
+                }
+            ]
+        }, 
+        {
+            "DifficultyLevel": 15,
+            "Body": "confiscate",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "没収する"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "提供する"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "修理する"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "交換する"
+                }
+            ]
+        }, 
+        {
+            "DifficultyLevel": 15,
+            "Body": "complacency",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "自己満足"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "不満"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "努力"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "協力"
+                }
+            ]
+        }, 
+        {
+            "DifficultyLevel": 15,
+            "Body": "dilate ",
+            "Options": [
+                {
+                    "IsCorrect": false,
+                    "Body": "設立する"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "縮小させる"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "膨張させる"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "修正する"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 30,
+            "Body": "ruthless",
+            "Options": [
+                
+                {
+                    "IsCorrect": false,
+                    "Body": "誠実な"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "親切な"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "慎重な"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "無慈悲な"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 15,
+            "Body": "supremacy",
+            "Options": [
+                {
+                    "IsCorrect": false,
+                    "Body": "分離"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "平等"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "至高"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "協調"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 15,
+            "Body": "brittle",
+            "Options": [
+                {
+                    "IsCorrect": false,
+                    "Body": "弾力のある"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "脆い"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "柔らかい"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "粘り強い"
+                }
+            ]
+        }, 
+        {
+            "DifficultyLevel": 15,
+            "Body": "incongruous",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "不調和な"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "一致した"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "明瞭な"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "完全な"
+                }
+            ]
+        }, 
+        {
+            "DifficultyLevel": 15,
+            "Body": "demolish",
+            "Options": [
+                {
+                    "IsCorrect": false,
+                    "Body": "建設する"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "破壊する"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "保存する"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "修理する"
                 }
             ]
         }
