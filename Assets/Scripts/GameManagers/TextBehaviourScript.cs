@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using System;
 
 public class TextBehaviourScript : MonoBehaviour
 {
@@ -34,6 +35,9 @@ public class TextBehaviourScript : MonoBehaviour
     public string op4;
     private bool judge;
 
+    [SerializeField] public Text3D ProblemText;
+    [SerializeField] public ProblemAnimation ProblemAnimation;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -49,13 +53,17 @@ public class TextBehaviourScript : MonoBehaviour
         qtg = qg.GetComponent<TextMeshProUGUI>();
         objScale = 1.0f;
         SkyNum = 1;
+
+        ProblemText.Start();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(gameManagerScript.process1 == true){
-            if(cnt == 0){
+        if (gameManagerScript.process1 == true)
+        {
+            if (cnt == 0)
+            {
                 gameManagerScript.bgmprocess1 = true;
                 TextsM.enabled = true;
                 cnt++;
@@ -64,8 +72,10 @@ public class TextBehaviourScript : MonoBehaviour
             }
         }
 
-        if(gameManagerScript.process1 == true){
-            if(cnt == 1){
+        if (gameManagerScript.process1 == true)
+        {
+            if (cnt == 1)
+            {
                 gameManagerScript.bgmprocess2 = true;
                 TextsM.text = "2nd Stage";
                 TextsM.enabled = true;
@@ -76,8 +86,10 @@ public class TextBehaviourScript : MonoBehaviour
             }
         }
 
-        if(gameManagerScript.process1 == true){
-            if(cnt == 2){
+        if (gameManagerScript.process1 == true)
+        {
+            if (cnt == 2)
+            {
                 gameManagerScript.bgmprocess3 = true;
                 TextsM.text = "3rd Stage";
                 TextsM.enabled = true;
@@ -88,19 +100,23 @@ public class TextBehaviourScript : MonoBehaviour
             }
         }
 
-        if(gameManagerScript.process3 == true){
+        if (gameManagerScript.process3 == true)
+        {
             gameManagerScript.probprocess = true;
             Invoke(nameof(DelayMethod2), 2f);
             Invoke(nameof(DelayMethod3), 4f);
             gameManagerScript.process3 = false;
         }
 
-        if(gameManagerScript.process4 == true){
+        if (gameManagerScript.process4 == true)
+        {
             Invoke(nameof(DelayMethod5), 2f);
         }
 
-        if(gameManagerScript.process5 == true){
-            if(gameManagerScript.judge5 == true){
+        if (gameManagerScript.process5 == true)
+        {
+            if (gameManagerScript.judge5 == true)
+            {
                 qt1.enabled = false;
                 qt2.enabled = false;
                 qt3.enabled = false;
@@ -112,21 +128,20 @@ public class TextBehaviourScript : MonoBehaviour
             }
         }
 
-        //ここで大きさ変更してた　ここでTextsM.enabled = false;にすれば回答中に出る問題は表示されなくなる
-        if(gameManagerScript.process6 == true){
-            //   if(TitleBehaviourScript.cnt == 2) objScale += 0.002f;
-            //    if(TitleBehaviourScript.cnt == 3) objScale += 0.0005f;
-            //    Texts.transform.localScale = new Vector3 (objScale, objScale, objScale);
-
-            //TextsM.enabled = false;
+        if (gameManagerScript.process6 == true)
+        {
+            ProblemAnimation.StartAnimation(ProblemText);
+            TextsM.enabled = false;
         }
 
-        if (gameManagerScript.process6 == false && objScale != 1f){
+        if (gameManagerScript.process6 == false && objScale != 1f)
+        {
             objScale = 1f;
-            Texts.transform.localScale = new Vector3 (objScale, objScale, objScale);
+            Texts.transform.localScale = new Vector3(objScale, objScale, objScale);
         }
 
-        if(gameManagerScript.process7 == true){
+        if (gameManagerScript.process7 == true)
+        {
             qtr.enabled = false;
             qtb.enabled = false;
             qty.enabled = false;
@@ -134,38 +149,46 @@ public class TextBehaviourScript : MonoBehaviour
             TextsM.enabled = false;
         }
 
-        if(gameManagerScript.process910 == true){
-            if(gameManagerScript.ans == 1)
+        if (gameManagerScript.process910 == true)
+        {
+            if (gameManagerScript.ans == 1)
                 TextsM.text = "答え Y:" + gameManagerScript.ansprob;
-            if(gameManagerScript.ans == 2)
+            if (gameManagerScript.ans == 2)
                 TextsM.text = "答え M:" + gameManagerScript.ansprob;
-            if(gameManagerScript.ans == 3)
+            if (gameManagerScript.ans == 3)
                 TextsM.text = "答え C:" + gameManagerScript.ansprob;
-            if(gameManagerScript.ans == 4)
+            if (gameManagerScript.ans == 4)
                 TextsM.text = "答え A:" + gameManagerScript.ansprob;
             TextsM.enabled = true;
         }
 
-        if(gameManagerScript.process10 == true){
-            if(gameManagerScript.SucceedJudge == true){
-            }else{
+        if (gameManagerScript.process10 == true)
+        {
+            if (gameManagerScript.SucceedJudge == true)
+            {
+            }
+            else
+            {
                 TextsM.text = "GAME OVER";
                 TextsM.enabled = true;
             }
         }
     }
 
-    void DelayMethod1(){
+    void DelayMethod1()
+    {
         gameManagerScript.process2 = true;
     }
 
-    void DelayMethod2(){
+    void DelayMethod2()
+    {
         gameManagerScript.SEprocess2 = true;
         TextsM.text = "Q" + gameManagerScript.n.ToString();
         TextsM.enabled = true;
     }
 
-    void DelayMethod3(){
+    void DelayMethod3()
+    {
         TextsM.text = gameManagerScript.prob;
         qt1.text = "Y:" + op1;
         qt2.text = "M:" + op2;
@@ -178,7 +201,8 @@ public class TextBehaviourScript : MonoBehaviour
         qtg.text = qt4.text;
     }
 
-    void DelayMethod5(){
+    void DelayMethod5()
+    {
         qt1.enabled = true;
         qt2.enabled = true;
         qt3.enabled = true;
