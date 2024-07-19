@@ -29,7 +29,7 @@ public class PanelBehaviourScript : MonoBehaviour
     private bool judge2;
     public int rep;
     public bool judge3;
-
+    private bool judge4;
     void Start()
     {
         time = 0f;
@@ -198,6 +198,8 @@ public class PanelBehaviourScript : MonoBehaviour
                 }
             }
         }
+
+        if(gameManagerScript.process4 == true) judge4 = false;
     }
 
     void DelayMethod1(){
@@ -206,7 +208,9 @@ public class PanelBehaviourScript : MonoBehaviour
         bluePanel.enabled = true;
         yellowPanel.enabled = true;
         greenPanel.enabled = true;
-        Invoke(nameof(DelayMethod3), 2f);
+        if(judge4 == false){
+            Invoke(nameof(DelayMethod3), 2f);
+        }
     }
 
     void DelayMethod2(){
@@ -216,5 +220,6 @@ public class PanelBehaviourScript : MonoBehaviour
 
     void DelayMethod3(){
         gameManagerScript.process5 = true;
+        judge4 = true;
     }
 }
