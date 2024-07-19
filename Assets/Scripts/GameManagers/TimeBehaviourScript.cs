@@ -14,10 +14,12 @@ public class TimeBehaviourScript : MonoBehaviour
     private bool movedr = false;
     public bool judge = false;
     private GameManagerScript gameManagerScript;
+    private PanelBehaviourScript panelBehaviourScript;
 
     void Start()
     {
         gameManagerScript = GetComponent<GameManagerScript>();
+        panelBehaviourScript = GetComponent<PanelBehaviourScript>();
     }
 
     // Update is called once per frame
@@ -49,6 +51,16 @@ public class TimeBehaviourScript : MonoBehaviour
             TimerNum = 16;
             TimerText.enabled = true;
             gameManagerScript.timebgmprocess1 = true;
+        }
+
+        if (gameManagerScript.process6 == true && judge == true)
+        {
+            Debug.Log("a");
+            if (TimerNum < 0.00001)
+            {
+                panelBehaviourScript.rep = 5;
+                Debug.Log("b");
+            }
         }
 
         if (gameManagerScript.process7 == true)

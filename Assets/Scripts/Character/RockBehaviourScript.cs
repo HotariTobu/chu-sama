@@ -78,7 +78,7 @@ public class RockBehaviourScript : MonoBehaviour
         Vector3 direction = new Vector3(Input2.transform.position.x - this.gameObject.transform.position.x, Input2.transform.position.y - this.gameObject.transform.position.y, Input2.transform.position.z - this.gameObject.transform.position.z);
         Quaternion targetRotation = Quaternion.LookRotation(direction, Vector3.up) * Quaternion.Euler(0f, 180f, 0f);
         Vector3 eulerAngles = targetRotation.eulerAngles;
-        Vector3 Angles = new Vector3(-5f, 180f, 0f);
+        Vector3 Angles = new Vector3(-1.7f, 180f, 0f);
         Input1.transform.Rotate(eulerAngles + Angles);
     }
 

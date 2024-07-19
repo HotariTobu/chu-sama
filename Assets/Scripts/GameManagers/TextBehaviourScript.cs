@@ -112,13 +112,16 @@ public class TextBehaviourScript : MonoBehaviour
             }
         }
 
+        //ここで大きさ変更してた　ここでTextsM.enabled = false;にすれば回答中に出る問題は表示されなくなる
         if(gameManagerScript.process6 == true){
-            if(TitleBehaviourScript.cnt == 2) objScale += 0.002f;
-            if(TitleBehaviourScript.cnt == 3) objScale += 0.0005f;
-            Texts.transform.localScale = new Vector3 (objScale, objScale, objScale);
+            //   if(TitleBehaviourScript.cnt == 2) objScale += 0.002f;
+            //    if(TitleBehaviourScript.cnt == 3) objScale += 0.0005f;
+            //    Texts.transform.localScale = new Vector3 (objScale, objScale, objScale);
+
+            //TextsM.enabled = false;
         }
 
-        if(gameManagerScript.process6 == false && objScale != 1f){
+        if (gameManagerScript.process6 == false && objScale != 1f){
             objScale = 1f;
             Texts.transform.localScale = new Vector3 (objScale, objScale, objScale);
         }
