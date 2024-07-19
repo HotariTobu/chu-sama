@@ -36,7 +36,8 @@ public class TitleBehaviourScript : MonoBehaviour
     private Vector3 first5;
     private Vector3 first6;
     private Vector3 first7;
-
+    private bool right;
+    private bool left;
 
     // Start is called before the first frame update
     void Start()
@@ -78,7 +79,7 @@ public class TitleBehaviourScript : MonoBehaviour
             Allow2.enabled = true;
             Allow3.enabled = false;
             Allow4.enabled = true;
-        }else if(cnt == 3 || cnt == 4){
+        }else if(cnt == 4 || cnt == 5){
             Allow1.enabled = true;
             Allow2.enabled = false;
             Allow3.enabled = true;
@@ -89,6 +90,17 @@ public class TitleBehaviourScript : MonoBehaviour
             Allow2.enabled = true;
             Allow3.enabled = true;
             Allow4.enabled = true;
+        }
+
+        if(cnt == 1){
+            right = true;
+            left = false;
+        }else if(cnt < 5 && cnt > 1){
+            right = true;
+            left = true;
+        }else if(cnt == 5){
+            right = false;
+            left = true;
         }
 
         if(cnt == 1){
@@ -131,7 +143,7 @@ public class TitleBehaviourScript : MonoBehaviour
             Input8.transform.position = new Vector3(0f, 100f, 0f);
         }
 
-        if(judge1)
+        if(judge1 && left)
         {
             time1 += Time.deltaTime / 2;
             Allow1.fillAmount = time1 / longTapTime;
@@ -149,7 +161,7 @@ public class TitleBehaviourScript : MonoBehaviour
             }
         }
 
-        if(judge2)
+        if(judge2 && right)
         {
             time2 += Time.deltaTime / 2;
             Allow2.fillAmount = time2 / longTapTime;
@@ -188,7 +200,7 @@ public class TitleBehaviourScript : MonoBehaviour
             judge2 = true;
         }
 
-        if(cnt == 2 || cnt == 3){
+        if(cnt >= 2 && cnt <= 5){
             if(Input.GetKeyDown(KeyCode.S) || poses == 3){
                 judge3 = true;
             }

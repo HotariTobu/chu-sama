@@ -27,29 +27,53 @@ public class QuizManager : MonoBehaviour
                 categoryKey = "history";
             }
 
+            if(TitleBehaviourScript.cnt == 4){
+                categoryKey = "english";
+            }
+
+            if(TitleBehaviourScript.cnt == 5){
+                int tmp = Random.Range(3, 5);
+                if(tmp == 3){
+                    categoryKey = "kanji";
+                }else if(tmp == 4){
+                    categoryKey = "history";
+                }else if(tmp == 5){
+                    categoryKey = "english";
+                }
+            }
+
             var categoryAsset = Resources.Load<TextAsset>($"Quizzes/{categoryKey}");
             var category = JsonUtility.FromJson<Category>(categoryAsset.text);
             int num = -1;
 
-            if(gameManagerScript.CharaCnt == 1){
-                while(list.Contains(num)){
-                    num = Random.Range(0, 6);
+            if(TitleBehaviourScript.cnt >= 2 && TitleBehaviourScript.cnt <= 4){
+                if(gameManagerScript.CharaCnt == 1){
+                    while(list.Contains(num)){
+                        num = Random.Range(0, 9);
+                    }
+
+                    list.Add(num);
+                    gameManagerScript.prob = category.Problems[num].Body;
+
+                }else if(gameManagerScript.CharaCnt == 2){
+                    while(list.Contains(num)){
+                        num = Random.Range(10, 19);
+                    }
+
+                    list.Add(num);
+                    gameManagerScript.prob = category.Problems[num].Body;
+
+                }else{
+                    while(list.Contains(num)){
+                        num = Random.Range(20, 30);
+                    }
+
+                    list.Add(num);
+                    gameManagerScript.prob = category.Problems[num].Body;
                 }
-
-                list.Add(num);
-                gameManagerScript.prob = category.Problems[num].Body;
-
-            }else if(gameManagerScript.CharaCnt == 2){
-                while(list.Contains(num)){
-                    num = Random.Range(7, 13);
-                }
-
-                list.Add(num);
-                gameManagerScript.prob = category.Problems[num].Body;
-
             }else{
                 while(list.Contains(num)){
-                    num = Random.Range(14, 20);
+                    num = Random.Range(20, 30);
                 }
 
                 list.Add(num);

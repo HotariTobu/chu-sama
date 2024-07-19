@@ -61,7 +61,7 @@ public class GameManagerScript : MonoBehaviour
     private TimeBehaviourScript timeBehaviourScript;
     private HealthBehaviourScript healthBehaviourScript;
     public SplineAnimate splineAnimate;
-    private float angle = 90f;
+    private float angle = 180f;
     private Vector3 axis = Vector3.up;
     private float interpolant = 0.05f;
     private Quaternion targetRot;
@@ -123,20 +123,20 @@ public class GameManagerScript : MonoBehaviour
 
         if(judge4){
             camera.transform.rotation = Quaternion.Lerp(camera.transform.rotation, targetRot, interpolant);
-            if(Quaternion.Angle(camera.transform.rotation, targetRot) < 0.005f && cnt2 == 0){
-                cnt2++;
-                angle = 179f;
-                axis = Vector3.down;
-                targetRot = Quaternion.AngleAxis(angle, axis) * camera.transform.rotation;
-            }
+            // if(Quaternion.Angle(camera.transform.rotation, targetRot) < 0.005f && cnt2 == 0){
+            //     cnt2++;
+            //     angle = 179f;
+            //     axis = Vector3.down;
+            //     targetRot = Quaternion.AngleAxis(angle, axis) * camera.transform.rotation;
+            // }
 
-            if(Quaternion.Angle(camera.transform.rotation, targetRot) < 0.005f && cnt2 == 1){
-                cnt2++;
-                angle = 90f;
-                axis = Vector3.down;
-                interpolant = 0.05f;
-                targetRot = Quaternion.AngleAxis(angle, axis) * camera.transform.rotation;
-            }
+            // if(Quaternion.Angle(camera.transform.rotation, targetRot) < 0.005f && cnt2 == 1){
+            //     cnt2++;
+            //     angle = 90f;
+            //     axis = Vector3.down;
+            //     interpolant = 0.05f;
+            //     targetRot = Quaternion.AngleAxis(angle, axis) * camera.transform.rotation;
+            // }
         }
 
         if(healthBehaviourScript.health > 0){
