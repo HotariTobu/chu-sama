@@ -32,7 +32,7 @@ public class QuizManager : MonoBehaviour
             }
 
             if(TitleBehaviourScript.cnt == 5){
-                int tmp = Random.Range(3, 5);
+                int tmp = Random.Range(3, 6);
                 if(tmp == 3){
                     categoryKey = "kanji";
                 }else if(tmp == 4){

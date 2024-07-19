@@ -86,15 +86,14 @@ public class GameManagerScript : MonoBehaviour
         n = 1;
         CollectCnt = 0;
         CharaCnt = 1;
-
-        Debug.Log(TitleBehaviourScript.cnt);
+        startjudge = true;
     }
 
     void Update()
     {
-        if((Input.GetKeyDown(KeyCode.I) || poses == 1) && startjudge == false){
+        if(startjudge == true){
             process1 = true;
-            startjudge = true;
+            startjudge = false;
         }
 
         if(process2 == true && CharaCnt == 1){
@@ -123,20 +122,6 @@ public class GameManagerScript : MonoBehaviour
 
         if(judge4){
             camera.transform.rotation = Quaternion.Lerp(camera.transform.rotation, targetRot, interpolant);
-            // if(Quaternion.Angle(camera.transform.rotation, targetRot) < 0.005f && cnt2 == 0){
-            //     cnt2++;
-            //     angle = 179f;
-            //     axis = Vector3.down;
-            //     targetRot = Quaternion.AngleAxis(angle, axis) * camera.transform.rotation;
-            // }
-
-            // if(Quaternion.Angle(camera.transform.rotation, targetRot) < 0.005f && cnt2 == 1){
-            //     cnt2++;
-            //     angle = 90f;
-            //     axis = Vector3.down;
-            //     interpolant = 0.05f;
-            //     targetRot = Quaternion.AngleAxis(angle, axis) * camera.transform.rotation;
-            // }
         }
 
         if(healthBehaviourScript.health > 0){
