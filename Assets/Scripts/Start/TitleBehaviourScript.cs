@@ -205,20 +205,20 @@ public class TitleBehaviourScript : MonoBehaviour
                 judge3 = true;
             }
 
-            if(Input.GetKeyUp(KeyCode.S)){
+            if(Input.GetKeyUp(KeyCode.S) || poses == 4){
                 judge3 = false;
                 time3 = 0;
                 gage.fillAmount = 0;
             }
         }
 
-        if(Input.GetKeyUp(KeyCode.A)){
+        if(Input.GetKeyUp(KeyCode.A) || poses == 4){
             judge1 = false;
             time1 = 0;
             Allow1.fillAmount = 0;
         }
 
-        if(Input.GetKeyUp(KeyCode.D)){
+        if(Input.GetKeyUp(KeyCode.D) || poses == 4){
             judge2 = false;
             time2 = 0;
             Allow2.fillAmount = 0;
