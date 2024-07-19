@@ -8,7 +8,7 @@ public class ProblemAnimation : MonoBehaviour
     [SerializeField] public float EndScale = 2;
     [SerializeField] public float StartDepth = 0.4f;
     [SerializeField] public float EndDepth = 1;
-    [SerializeField] public float Duration = 15;
+    [SerializeField] public float Duration = 16;
 
     private Dictionary<Text3D, Coroutine> _coroutines = new();
 
@@ -30,6 +30,8 @@ public class ProblemAnimation : MonoBehaviour
             StopCoroutine(coroutine);
             _coroutines.Remove(problemText);
         }
+        problemText.Scale = StartScale;
+        problemText.Depth = StartDepth;
     }
 
     private IEnumerator UpdateAnimation(Text3D problemText)

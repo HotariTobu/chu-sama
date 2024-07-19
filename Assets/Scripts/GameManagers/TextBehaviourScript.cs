@@ -38,6 +38,28 @@ public class TextBehaviourScript : MonoBehaviour
     [SerializeField] public Text3D ProblemText;
     [SerializeField] public ProblemAnimation ProblemAnimation;
 
+    private CenterTextStatus _centerTextStatus
+    {
+        set
+        {
+            switch (value)
+            {
+                case CenterTextStatus.NONE:
+                    TextsM.enabled = false;
+                    ProblemText.Enabled = false;
+                    break;
+                case CenterTextStatus.INFO:
+                    TextsM.enabled = true;
+                    ProblemText.Enabled = false;
+                    break;
+                case CenterTextStatus.PROBLEM:
+                    TextsM.enabled = false;
+                    ProblemText.Enabled = true;
+                    break;
+            }
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -55,6 +77,8 @@ public class TextBehaviourScript : MonoBehaviour
         SkyNum = 1;
 
         ProblemText.Start();
+
+        _centerTextStatus = CenterTextStatus.NONE;
     }
 
     // Update is called once per frame
@@ -65,7 +89,7 @@ public class TextBehaviourScript : MonoBehaviour
             if (cnt == 0)
             {
                 gameManagerScript.bgmprocess1 = true;
-                TextsM.enabled = true;
+                _centerTextStatus = CenterTextStatus.INFO;
                 cnt++;
                 Invoke(nameof(DelayMethod1), 3f);
                 gameManagerScript.process1 = false;
@@ -78,7 +102,7 @@ public class TextBehaviourScript : MonoBehaviour
             {
                 gameManagerScript.bgmprocess2 = true;
                 TextsM.text = "2nd Stage";
-                TextsM.enabled = true;
+                _centerTextStatus = CenterTextStatus.INFO;
                 cnt++;
                 SkyNum++;
                 Invoke(nameof(DelayMethod1), 3f);
@@ -92,7 +116,7 @@ public class TextBehaviourScript : MonoBehaviour
             {
                 gameManagerScript.bgmprocess3 = true;
                 TextsM.text = "3rd Stage";
-                TextsM.enabled = true;
+                _centerTextStatus = CenterTextStatus.INFO;
                 cnt++;
                 SkyNum++;
                 Invoke(nameof(DelayMethod1), 3f);
@@ -131,7 +155,6 @@ public class TextBehaviourScript : MonoBehaviour
         if (gameManagerScript.process6 == true)
         {
             ProblemAnimation.StartAnimation(ProblemText);
-            TextsM.enabled = false;
         }
 
         if (gameManagerScript.process6 == false && objScale != 1f)
@@ -146,7 +169,8 @@ public class TextBehaviourScript : MonoBehaviour
             qtb.enabled = false;
             qty.enabled = false;
             qtg.enabled = false;
-            TextsM.enabled = false;
+            _centerTextStatus = CenterTextStatus.NONE;
+            ProblemAnimation.StopAnimation(ProblemText);
         }
 
         if (gameManagerScript.process910 == true)
@@ -159,7 +183,7 @@ public class TextBehaviourScript : MonoBehaviour
                 TextsM.text = "答え C:" + gameManagerScript.ansprob;
             if (gameManagerScript.ans == 4)
                 TextsM.text = "答え A:" + gameManagerScript.ansprob;
-            TextsM.enabled = true;
+            _centerTextStatus = CenterTextStatus.INFO;
         }
 
         if (gameManagerScript.process10 == true)
@@ -170,7 +194,7 @@ public class TextBehaviourScript : MonoBehaviour
             else
             {
                 TextsM.text = "GAME OVER";
-                TextsM.enabled = true;
+                _centerTextStatus = CenterTextStatus.INFO;
             }
         }
     }
@@ -184,12 +208,13 @@ public class TextBehaviourScript : MonoBehaviour
     {
         gameManagerScript.SEprocess2 = true;
         TextsM.text = "Q" + gameManagerScript.n.ToString();
-        TextsM.enabled = true;
+        _centerTextStatus = CenterTextStatus.INFO;
     }
 
     void DelayMethod3()
     {
-        TextsM.text = gameManagerScript.prob;
+        ProblemText.Text = gameManagerScript.prob;
+        _centerTextStatus = CenterTextStatus.PROBLEM;
         qt1.text = "Y:" + op1;
         qt2.text = "M:" + op2;
         qt3.text = "C:" + op3;
@@ -207,5 +232,12 @@ public class TextBehaviourScript : MonoBehaviour
         qt2.enabled = true;
         qt3.enabled = true;
         qt4.enabled = true;
+    }
+
+    private enum CenterTextStatus
+    {
+        NONE,
+        INFO,
+        PROBLEM,
     }
 }

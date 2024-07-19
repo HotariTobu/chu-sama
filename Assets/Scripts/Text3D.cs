@@ -16,6 +16,13 @@ public class Text3D
         _depthText = DepthObject.GetComponent<TextMeshProUGUI>();
     }
 
+    public bool Enabled {
+        set{
+            _colorText.enabled = value;
+            _depthText.enabled = value;
+        }
+    }
+
     public string Text
     {
         set
