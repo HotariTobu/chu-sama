@@ -1,0 +1,294 @@
+{
+    "$schema": "./category.schema.json",
+    "Problems": [
+        {
+            "DifficultyLevel": 10,
+            "Body": "ぼくの性別は？",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "男"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "女"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "不明"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "トランスジェンダー"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 20,
+            "Body": "ぼくの好きなタイプは？",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "努力できる人"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "優しい人"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "面白い人"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "かっこいい人"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 0,
+            "Body": "ぼくのlineスタンプ買った？",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "はい"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "いいえ"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "まだ"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "買わねえよ"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 0,
+            "Body": "ぼくのこと好き？",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "はい"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "いいえ"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "普通"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "だまれ"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 40,
+            "Body": "ぼくの特技は？",
+            "Options": [
+                
+                {
+                    "IsCorrect": false,
+                    "Body": "ヘディング"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "エールを送ること"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "慰めること"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "大食い"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 0,
+            "Body": "ぼくのこと知ってる？",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "はい"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "いいえ"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "まだ"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "知らねえよ"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 30,
+            "Body": "ぼくの生まれた年は？",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "2013年"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "2016年"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "2003年"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "2020年"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 0,
+            "Body": "中央大学は好き？",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "はい"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "いいえ"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "普通"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "だまれ"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 0,
+            "Body": "ぼくの性格は？",
+            "Options": [
+                
+                {
+                    "IsCorrect": false,
+                    "Body": "努力家"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "おとなしい"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "感動屋"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "いじっぱり"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 0,
+            "Body": "ぼくに会ったことある？",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "はい"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "いいえ"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "だれ？"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "知らねえよ"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 0,
+            "Body": "ぼくのグッズ買った？",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "はい"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "いいえ"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "だれ？"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "買わねえよ"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 10,
+            "Body": "旅行するならどこへ行きたい？",
+            "Options": [
+                
+                {
+                    "IsCorrect": false,
+                    "Body": "韓国"
+                },
+                {
+                    "IsCorrect": true,
+                    "Body": "中央大学"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "ハワイ"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "タイ"
+                }
+            ]
+        },
+        {
+            "DifficultyLevel": 3,
+            "Body": "好きな大学は？",
+            "Options": [
+                {
+                    "IsCorrect": true,
+                    "Body": "中央大学"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "早稲田大学"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "東京大学"
+                },
+                {
+                    "IsCorrect": false,
+                    "Body": "京都大学"
+                }
+            ]
+        }
+    ]
+}
