@@ -14,6 +14,30 @@ nishio
 
 外部パッケージは再配布を避けるため、`Assets/Imported`以下に配置します。
 
+### Unity Asset Store
+
+2D Casual UI
+[2D Casual UI HD](https://assetstore.unity.com/packages/2d/gui/icons/2d-casual-ui-hd-82080)
+
+Hovl Studio
+[Magic Effects FREE](https://assetstore.unity.com/packages/vfx/particles/spells/magic-effects-free-247933)
+
+Simple UI
+[Simple UI Elements](https://assetstore.unity.com/packages/2d/gui/icons/simple-ui-elements-53276)
+
+ParticlePack
+[Particle Pack](https://assetstore.unity.com/packages/vfx/particles/particle-pack-127325)
+
+ZRNAssets
+[Japanese Otaku City](https://assetstore.unity.com/packages/3d/environments/urban/japanese-otaku-city-20359)
+
+### その他音源
+
+<https://soundeffect-lab.info/copyright/>
+
+<https://dova-s.jp/_contents/license/>
+
+
 <!-- - MediaPipeUnity
   - https://github.com/homuler/MediaPipeUnityPlugin
   - Releasesの`MediaPipeUnityPlugin-all.zip`をダウンロードする
